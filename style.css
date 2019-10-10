@@ -5,3 +5,8 @@ body {
 h1 {
     color: #9490D5;
 }
+
+.fit-picture {
+    width: 50%;
+    height: 50%;
+}
