@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-   color :blue; 
+   color: blue; 
    font-size: 25px;
 }
 
@@ -33,7 +33,7 @@ header p {
 }
 
 footer {
-    background-color:aliceblue;
+    background-color: aliceblue;
     padding-left: 5px;
     border: black solid thin;
     border-radius: 8px;
@@ -46,7 +46,7 @@ figure.left {
     float: left;
 }
 
-nav {
+nav {        
     background-color: aliceblue;
     border: 1px green solid;
     padding: 8px;
@@ -57,9 +57,84 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 nav li {
     display: inline;
+    padding: 8px;    
+}
+
+body {
+    background-color: aqua;
+}
+
+h1 {
+   color: darkred; 
+   font-size: "55px";
+}
+
+.fit-picture {
+    width: 300px;
+    height: 300px;
+}
+
+footer {
+    background-color:aliceblue;
+    padding-left: 5px;
+    border: black solid thin;
+    border-radius: 8px;
+}
+
+section.clear{ 
+    clear: both;
+}
+
+/* box model */
+
+.btn-padding {
+    padding: 25px;
+    border: 10px green double;    
+    border-radius: 22px;
+}
+
+.btn-padding:hover {
+    background-color: aqua;
+    border-color: white;
+}
+
+.btn-margin-padding {
+    border:15px;
+    margin: 25px;
+    border-style: ridge;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: green;
+}  
+
+#btn-wrapper {
+    background-color: aquamarine;
+    display: inline-block;
+    border: thin black solid;
+}
+
+.btn-margin-padding:active{
+    background-color: red;
+}
+/* 
+.btn-padding {
+    border-width: 10px;
+    border-color: green;
+    border-style: solid;
+} */
+
+aside {        
+    background-color: bisque;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: right;
+    font-style: italic;
+    margin-right: 5px;
     padding: 8px;
+    width: 33%;        
 }
