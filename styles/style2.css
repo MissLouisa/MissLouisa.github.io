@@ -24,12 +24,13 @@ h2 {
     font-family: fantasy, cursive, serif;
 }
 
-header{
+header {
     background-color: greenyellow;
 }
+
 header p {
-    font-weight: bold;
-    color:blue;
+        font-weight: bold;
+        color: blue;
 }
 
 footer {
@@ -45,6 +46,12 @@ main {
 figure.left {
     float: left;
 }
+
+figure.border {
+        background-color: lightslategray;
+        border: black solid thin;
+        padding: 5px;
+} 
 
 nav {        
     background-color: aliceblue;
@@ -84,6 +91,10 @@ footer {
     padding-left: 5px;
     border: black solid thin;
     border-radius: 8px;
+}
+
+footer {
+    clear: both; important!
 }
 
 section.clear{ 
