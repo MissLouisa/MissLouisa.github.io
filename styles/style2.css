@@ -39,6 +39,7 @@ footer {
     border: black solid thin;
     border-radius: 8px;
 }
+
 main {
     background-color: brown;
 }
@@ -64,7 +65,6 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
 }
 
 nav li {
