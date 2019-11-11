@@ -2,7 +2,6 @@ function divider() {
     console.log("------------------\n------------------")
 }
 
-
 const myArray = [];
 
 const numbers = [1, 2, 3, 4, 5, 8, 10];
