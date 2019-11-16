@@ -7,7 +7,6 @@ window.onload = () => {
     function simpleFunction() {
         console.log("simple function here");
         simpleFunctionDisplay.textContent = "some text"
-
     }
 
     function functionParameters(value) {
