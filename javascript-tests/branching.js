@@ -3,7 +3,6 @@ if (height >= 25){
     console.log("a big one")
 }
 
-
 height = 5;
 if (height >= 25){
     console.log("a big one")

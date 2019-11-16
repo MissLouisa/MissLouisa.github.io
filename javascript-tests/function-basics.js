@@ -1,12 +1,27 @@
-function simpleFunction() {
-    console.log("funções devem consistir em instruções projetadas para executar uma única tarefa.");
-}
+window.onload = () => {
+    const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
+    const functionCallsAction = document.getElementById('functionCallsAction');
+    functionCallsAction.onclick = simpleFunction;
 
-const parameter = 25;
-function functionParameters(parameter) {
-    console.log(parameter);
-}
 
-function functionReturn() {
-    return console.log('Many functions return values.');
+    function simpleFunction() {
+        console.log("simple function here");
+        simpleFunctionDisplay.textContent = "some text"
+
+    }
+
+    function functionParameters(value) {
+        console.log(value);
+    }
+
+    function functionReturn(result) {
+        return "the add function returned " + result;
+    }
+
+    function add(a, b) {
+        return a + b;
+    }
+
+//simpleFunction();
+functionParameters("print me");
 }
