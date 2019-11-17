@@ -21,6 +21,11 @@ window.onload = () => {
         return a + b;
     }
 
+    functionCallsAction.onclick = function() {
+        simple();
+    }
+}
+
 //simpleFunction();
 functionParameters("print me");
 }

@@ -1,64 +1,53 @@
+body, h1, h2, header, nav, a, main, h2, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 body {
-    background-color: aqua;
-}
-
-h1 {
-   color: blue; 
-   font-size: 25px;
-}
-
-h2 {
-    color: green;
-    font-size: 20px;
-}
-
-.red-heading {
-    color: red;
-}
-
-.blue-text{
-    color: blue;
-}
-
-#new-font {
-    font-family: fantasy, cursive, serif;
+    background-color: #991157;
+    padding-bottom: 10px;
 }
 
 header {
-    background-color: greenyellow;
+    background-color: #991157;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    font-style: normal;
+    margin-top: 3%;
 }
 
 header p {
-        font-weight: bold;
-        color: blue;
+    color: #B59609;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Sue Ellen Francisco', cursive;
+    margin-top: 1%;
+
 }
 
-footer {
-    background-color: aliceblue;
-    padding-left: 5px;
-    border: black solid thin;
-    border-radius: 8px;
+nav {
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    font-family: 'Bebas Neue', cursive;
+    border: 1px white solid;
+    padding: 10px;
+    margin: 10px 250px 10px 300px;
 }
 
-main {
-    background-color: brown;
-}
-
-figure.left {
-    float: left;
-}
-
-figure.border {
-        background-color: lightslategray;
-        border: black solid thin;
-        padding: 5px;
-} 
-
-nav {        
-    background-color: aliceblue;
-    border: 1px green solid;
-    padding: 8px;
-    margin: -1px 0px 0px 0px;
+#top-about {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    background-color: #FFB0FC;
+    border: 1px white solid;
+    padding: 10px;
+    margin: 10px 650px 50px 670px;
 }
 
 nav ul {
@@ -69,16 +58,74 @@ nav ul {
 
 nav li {
     display: inline;
-    padding: 8px;    
+    padding: 8px;
 }
 
-body {
-    background-color: aqua;
+/* unvisited link */
+a:link {
+  color: #991157;
+}
+
+/* visited link */
+a:visited {
+  color: darkorange;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+main {
+    background-color: #FFDDFC;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #991157;
+    font-size: 25px;
+    margin: 10px 10px 10px 20px;
+    padding-top: 20px;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    color: #991157;
+    font-family: 'Muli', sans-serif;
+    margin: 10px 10px 10px 50px;
 }
 
 h1 {
-   color: darkred; 
-   font-size: "55px";
+   color: white;
+   text-align: center;
+}
+
+.blue-text{
+    color: blue;
+}
+
+footer {
+    background-color: aliceblue;
+    padding-left: 5px;
+    border: black solid thin;
+    border-radius: 8px;
+}
+
+figure.left {
+    float: left;
+}
+
+figure.border {
+        background-color: lightslategray;
+        border: black solid thin;
+        padding: 5px;
 }
 
 .fit-picture {
@@ -97,7 +144,7 @@ footer {
     clear: both; important!
 }
 
-section.clear{ 
+section.clear{
     clear: both
 }
 
@@ -105,7 +152,7 @@ section.clear{
 
 .btn-padding {
     padding: 25px;
-    border: 10px green double;    
+    border: 10px green double;
     border-radius: 22px;
 }
 
@@ -121,7 +168,7 @@ section.clear{
     padding-left: 10px;
     padding-right: 10px;
     border-color: green;
-}  
+}
 
 #btn-wrapper {
     background-color: aquamarine;
@@ -132,14 +179,14 @@ section.clear{
 .btn-margin-padding:active{
     background-color: red;
 }
-/* 
+/*
 .btn-padding {
     border-width: 10px;
     border-color: green;
     border-style: solid;
 } */
 
-aside {        
+aside {
     background-color: bisque;
     border: black 1px solid;
     border-radius: 8px;
@@ -147,5 +194,5 @@ aside {
     font-style: italic;
     margin-right: 5px;
     padding: 8px;
-    width: 33%;        
+    width: 33%;
 }
