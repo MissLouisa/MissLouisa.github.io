@@ -1,6 +1,6 @@
 const person = {
-    firstName: "Francois",
-    lastName: "Mukaba",
+    firstName: "Luiza",
+    lastName: "Cartaxo",
     fullname: function () {
         return this.firstName + " " + this.lastName;
     }
@@ -37,7 +37,6 @@ calculator.multiply = function(o1, o2) {
 };
 
 console.log("Multiply length of first and lastNames: " + calculator.multiply(calculator.operand01, calculator.operand02));
-
 
 function divider(title) {
     console.log("\n====================================");
