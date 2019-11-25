@@ -24,6 +24,18 @@ window.onload = () => {
     functionCallsAction.onclick = function() {
         simple();
     }
+
+    section {
+        clear: both;
+    }
+
+    section.clear {
+        clear: both;
+    }
+
+    figure.left {
+        float: left;
+    }
 }
 
 //simpleFunction();
