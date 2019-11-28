@@ -3,7 +3,7 @@ window.onload = () => {
         appendToList: (list, value) => {
             const li = document.createElement("li");
             li.appendChild(document.createTextNode(value));
-            list.
+            list.appendChild.(li);
         }
 }
     const listButton = document.getElementById('runForLoop');
