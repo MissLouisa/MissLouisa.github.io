@@ -196,3 +196,23 @@ aside {
     padding: 8px;
     width: 33%;
 }
+
+.blueBackground {
+    background-color: aqua;
+}
+
+.greenBackground {
+    background-color: green;
+}
+
+.yellowBackground {
+    background-color: yellow;
+}
+
+.purpleBackground {
+    background-color: purple;
+}
+
+.pinkBackground {
+    background-color: pink;
+}
