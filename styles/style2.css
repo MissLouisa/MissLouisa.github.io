@@ -14,10 +14,10 @@ body {
 
 header {
     background-color: #991157;
-    font-family: 'Bebas Neue', cursive;
     font-size: 45px;
     font-style: normal;
     margin-top: 3%;
+    font-family: 'Sue Ellen Francisco', cursive;
 }
 
 header p {
@@ -34,7 +34,7 @@ nav {
     text-align: center;
     font-size: 25px;
     background-color: white;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Sue Ellen Francisco', cursive;
     border: 1px white solid;
     padding: 10px;
     margin: 10px 250px 10px 300px;
@@ -42,7 +42,7 @@ nav {
 
 #top-about {
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Sue Ellen Francisco', cursive;
     font-size: 25px;
     background-color: #FFB0FC;
     border: 1px white solid;
