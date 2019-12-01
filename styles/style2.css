@@ -5,7 +5,7 @@ body, h1, h2, header, nav, a, main, h2, p {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', cursive;
 }
 
 body {
@@ -25,7 +25,7 @@ header p {
     text-align: center;
     font-size: 30px;
     font-style: italic;
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', cursive;
     margin-top: 1%;
 
 }
@@ -42,7 +42,7 @@ nav {
 
 #top-about {
     text-align: center;
-    font-family: 'Bebas Neue';
+    ffont-family: 'Bebas Neue', cursive;
     font-size: 25px;
     background-color: #FFB0FC;
     border: 1px white solid;
