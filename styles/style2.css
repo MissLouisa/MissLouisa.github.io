@@ -5,6 +5,7 @@ body, h1, h2, header, nav, a, main, h2, p {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: 'Bebas Neue';
 }
 
 body {
@@ -17,7 +18,6 @@ header {
     font-size: 45px;
     font-style: normal;
     margin-top: 3%;
-    font-family: 'Sue Ellen Francisco', cursive;
 }
 
 header p {
@@ -25,7 +25,7 @@ header p {
     text-align: center;
     font-size: 30px;
     font-style: italic;
-    font-family: 'Sue Ellen Francisco', cursive;
+    font-family: 'Bebas Neue';
     margin-top: 1%;
 
 }
@@ -42,7 +42,7 @@ nav {
 
 #top-about {
     text-align: center;
-    font-family: 'Sue Ellen Francisco', cursive;
+    font-family: 'Bebas Neue';
     font-size: 25px;
     background-color: #FFB0FC;
     border: 1px white solid;
