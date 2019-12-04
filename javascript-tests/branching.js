@@ -2,23 +2,10 @@ let height = 5;
 if (height >= 25){
     console.log("a big one")
 }
-
-height = 5;
-if (height >= 25){
-    console.log("a big one")
-}
-else {
-    console.log("a little one")
-}
-
-height = 5;
-if (height >= 25){
-    console.log("a big one")
-}
 else if (height >= 0) {
     console.log("a little one")
 } else {
-    console.log("negative or invalid number ")
+    console.log("negative or invalid number")
 }
 
 height = 'little';
@@ -32,7 +19,7 @@ switch(height) {
         break;
 
     default:
-        console.log('We do not know about this one.')
+        console.log('We do not know about this one')
 }
 
 window.onload = () => {
@@ -40,7 +27,7 @@ window.onload = () => {
     const simpleBranchDisplay = document.getElementById('simpleBranchDisplay');
 
     simpleBranchAction.onclick = (event) => {
-        let height = 4;
+        let height = 50;
         if (height >= 25) {
             simpleBranchDisplay.textContent = 'We have a big one';
         } else {

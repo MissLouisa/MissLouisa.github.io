@@ -1,134 +1,77 @@
-body, h1, h2, header, nav, a, main, h2, p {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: auto;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    font-family: 'Bebas Neue', cursive;
-}
-
 body {
-    background-color: #991157;
-    padding-bottom: 10px;
-}
-
-header {
-    background-color: #991157;
-    font-size: 45px;
-    font-style: normal;
-    margin-top: 3%;
-}
-
-header p {
-    color: #B59609;
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    font-family: 'Sue Ellen Francisco', cursive;
-    margin-top: 1%;
-
-}
-
-nav {
-    text-align: center;
-    font-size: 25px;
-    background-color: white;
-    font-family: 'Sue Ellen Francisco', cursive;
-    border: 1px white solid;
-    padding: 10px;
-    margin: 10px 250px 10px 300px;
-}
-
-#top-about {
-    text-align: center;
-    font-family: 'Bebas Neue';
-    font-size: 25px;
-    background-color: #FFB0FC;
-    border: 1px white solid;
-    padding: 10px;
-    margin: 10px 650px 50px 670px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    text-align: center;
-    font-family: 'Bebas Neue';
-    padding: 10px;
-}
-
-/* unvisited link */
-a:link {
-  color: #991157;
-}
-
-/* visited link */
-a:visited {
-  color: darkorange;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-
-main {
-    background-color: #FFDDFC;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-}
-
-h2 {
-    color: #991157;
-    font-size: 25px;
-    margin: 10px 10px 10px 20px;
-    padding-top: 20px;
-    font-family: 'Muli', sans-serif;
-    font-weight: bold;
-}
-
-p {
-    color: #991157;
-    font-family: 'Muli', sans-serif;
-    margin: 10px 10px 10px 50px;
+    background-color: #EF9CBA;
 }
 
 h1 {
    color: white;
-   text-align: center;
+   font-size: 30px;
 }
 
-.blue-text{
-    color: blue;
+h2 {
+    color: white;
+    font-size: 20px;
+}
+
+#new-font {
+    font-family: fantasy, cursive, serif;
+}
+
+header{
+    background-color: #EF9CBA;
+    font-family: 'Fredericka the Great', cursive;
+    width: 100%;
+    text-align: center;
+}
+header p {
+    width: 100%;
+    color: #875AA8;
+    font-size: 20px;
 }
 
 footer {
     background-color: aliceblue;
     padding-left: 5px;
-    border: black solid thin;
+    border: purple solid thin;
     border-radius: 8px;
+}
+
+.p-footer {
+    color: purple;
+}
+
+main {
+    background-color: #EF9CBA;
 }
 
 figure.left {
     float: left;
 }
 
-figure.border {
-        background-color: lightslategray;
-        border: black solid thin;
-        padding: 5px;
+nav {
+    background-color: aliceblue;
+    border: 1px purple solid;
+    padding: 1%;
+    margin: 1px 0px 0px 0px;
+    font-family: 'Londrina Solid', cursive;
+}
+
+nav.top-about {
+    background-color: #FFD6FF;
+    text-align: center;
+    margin: 3% 38% 2% 38%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 120%;
+}
+
+nav li {
+    display: inline;
+    padding: 8px;
 }
 
 .fit-picture {
@@ -136,19 +79,8 @@ figure.border {
     height: 300px;
 }
 
-footer {
-    background-color:aliceblue;
-    padding-left: 5px;
-    border: black solid thin;
-    border-radius: 8px;
-}
-
-footer {
-    clear: both; important!
-}
-
 section.clear{
-    clear: both
+    clear: both;
 }
 
 /* box model */
@@ -176,7 +108,7 @@ section.clear{
 #btn-wrapper {
     background-color: aquamarine;
     display: inline-block;
-    border: thin black solid;
+    border : thin black solid;
 }
 
 .btn-margin-padding:active{
@@ -198,6 +130,58 @@ aside {
     margin-right: 5px;
     padding: 8px;
     width: 33%;
+}
+
+#simpleBranchDisplay {
+    text-align: center;
+    color: purple;
+    font-size: 100%;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+ /* outline: none;*/
+  color: #fff;
+  background-color: #FF9CD2;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.button:hover {
+    color: white;
+    background-color: #E85A75;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:active {
+  background-color: peru;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  text-decoration: none;
+}
+
+#simpleBranchAction {
+    text-align: center;
+    width: 40%;
+    margin: 1% 10% 5% 30%;
+}
+
+p.center {
+    text-align: center;
+}
+
+img.photo-me {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
 }
 
 .blueBackground {
