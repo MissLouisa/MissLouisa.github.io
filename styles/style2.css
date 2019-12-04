@@ -2,7 +2,7 @@ body, h1, h2, header, nav, a, main, h2, p {
     margin: 0;
     padding: 0;
     border: 0;
-    width: 100%;
+    width: auto;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
