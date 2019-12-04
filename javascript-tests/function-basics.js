@@ -1,12 +1,36 @@
+const elfCode = {
+    appendToList: (list, value) => {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(value));
+        list.appendChild(li);
+    }
+};
+
 window.onload = () => {
-    const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
-    const functionCallsAction = document.getElementById('functionCallsAction');
+    const simpleFunctionDisplay = document.getElementById('functionCallsAction');
+    const functionCallsAction = document.getElementById('addToListAction');
     functionCallsAction.onclick = simpleFunction;
 
+    console.log('foo');
+    functionCalls.onclick = () => {
+        // Both these functions get their display control
+        simpleFunction();
+    };
+
+    addToListAction.onclick = () => {
+        const listDisplay = document.getElementById('listDisplay');
+        const nameDisplay = document.getElementById('nameDisplay');
+
+        const data = nameDisplay.value;
+        elfCode.appendToList(listDisplay, data);
+    }
 
     function simpleFunction() {
-        console.log("simple function here");
-        simpleFunctionDisplay.textContent = "some text"
+        const displayText = "Functions should consist of statements designed to perform a single task.";
+        console.log(displayText);
+
+        const simpleFunctionDisplay = document.getElementById("simpleFunctionDisplay");
+        simpleFunctionDisplay.textContent = displayText;
     }
 
     function functionParameters(value) {
@@ -23,18 +47,6 @@ window.onload = () => {
 
     functionCallsAction.onclick = function() {
         simple();
-    }
-
-    section {
-        clear: both;
-    }
-
-    section.clear {
-        clear: both;
-    }
-
-    figure.left {
-        float: left;
     }
 }
 
