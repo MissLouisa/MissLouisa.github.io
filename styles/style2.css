@@ -2,6 +2,7 @@ body, h1, h2, header, nav, a, main, h2, p {
     margin: 0;
     padding: 0;
     border: 0;
+    width: 100%;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -58,7 +59,9 @@ nav ul {
 
 nav li {
     display: inline;
-    padding: 8px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    padding: 10px;
 }
 
 /* unvisited link */
