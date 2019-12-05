@@ -1,61 +1,50 @@
-const elfCode = {
-    appendToList: (list, value) => {
-        const li = document.createElement("li");
-        li.appendChild(document.createTextNode(value));
-        list.appendChild(li);
-    }
-};
+const parameters = "Many functions take parameters.";
+
+function simpleFunction() {
+    const displayText = "Functions should consist of statements designed to perform a single task.";
+    console.log(displayText);
+
+    simpleFunctionDisplay.textContent = displayText;
+}
+
+function functionParameters(parameters) {
+    console.log(parameters);
+
+    const functionParametersDisplay = document.getElementById("functionParametersDisplay");
+    functionParametersDisplay.textContent = parameters;
+}
+
+function functionReturn() {
+    const displayReturn = "Many functions return values.";
+
+    functionReturnDisplay.textContent = displayReturn;
+    return displayReturn;
+}
 
 window.onload = () => {
-    const functionCalls = document.getElementById('functionCallsAction');
-    const addToListAction = document.getElementById('addToListAction');
+    const simpleFunctionDisplay = document.getElementById("simpleFunctionDisplay");
+    const functionParametersDisplay = document.getElementById("functionParametersDisplay");
+    const functionReturnDisplay = document.getElementById("functionReturnDisplay");
+    const functionCallsAction = document.getElementById("functionCallsAction");
+    const listButton = document.getElementById("addToListAction");
 
-    console.log('foo');
-    functionCalls.onclick = () => {
+    functionCallsAction.onclick = function() {
         // Both these functions get their display control
         simpleFunction();
-        functionParameters(value);
+        functionParameters(parameters);
         functionReturn();
     };
 
-    addToListAction.onclick = () => {
-        const listDisplay = document.getElementById('listDisplay');
-        const nameDisplay = document.getElementById('nameDisplay');
+    listButton.onclick = () => {
+        const newList = document.getElementById("listDisplay");
+        addToList.appendToList(newList, nameDisplay.value);
+    };
 
-        const data = nameDisplay.value;
-        elfCode.appendToList(listDisplay, data);
-    }
-
-    function simpleFunction() {
-        const displayText = "Functions should consist of statements designed to perform a single task.";
-        console.log(displayText);
-
-        const simpleFunctionDisplay2 = document.getElementById("simpleFunctionDisplay2");
-        simpleFunctionDisplay2.textContent = displayText;
-    }
-
-    function functionParameters(value) {
-        console.log(value);
-
-        const functionParametersDisplay = document.getElementById("functionParameters");
-        functionParametersDisplay.textContent = value;
-    }
-
-    function functionReturn() {
-        const displayReturn = "Many functions return values.";
-
-        const functionReturnDisplay = document.getElementById("functionReturn");
-        functionReturnDisplay.textContent = displayReturn;
-        return displayReturn;
-    }
-
-    functionCallsAction.onclick = function() {
-        simpleFunction();
-        functionParameters(value);
-        functionReturn();
-    }
-
-    functionParameters("Many functions take parameters.");
-}
-
-
+    const addToList = {
+        appendToList: (list, txt) => {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(txt));
+            list.appendChild(li);
+        }
+    };
+};
