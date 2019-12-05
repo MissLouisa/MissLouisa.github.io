@@ -53,7 +53,7 @@ figure.left {
     float: left;
 }
 
-p, label, ul {
+p, label, ul, h4 {
     color: purple;
     font-size: 18px;
 }

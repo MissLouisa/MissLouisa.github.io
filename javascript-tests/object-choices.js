@@ -1,81 +1,51 @@
-const simpleObject = {
-    sayName: function () {
-        var label = "Simple object.";
-        console.log(label);
-        return label;
-    }
-};
-
-simpleObject.sayName();
-
-simpleObject.dynamic = function () {
-    console.log("dynamic method.");
-}
-
-simpleObject.dynamic();
-
-// function constructor
-function FunctionObject() {
-    FunctionObject.prototype.proto = function () {
-        return 'Function object';
-    }
-};
-
-FunctionObject.prototype.dynamicProto = function () {
-    return 'dynamic proto';
-};
-
-
-let obj = new FunctionObject();
-console.log(obj.proto());
-console.log(obj.dynamicProto());
-console.log(obj.constructor.toString());
-
-
-class custom {
-    constructor(word) {
-        this.word = word;
-    }
-
-    printMe() {
-        console.log(this.word);
-        return this.word;
-    }
-};
-
-let myWord = new custom("my word");
-myWord.printMe();
-
-
-function customWorkAround(word) {
-    let custom = new custom("custom class");
-
-}
-
 window.onload = () => {
+    const simpleObject = {
+        firstName: "Paul",
+        lastName: "McCartney",
+        sayName: function(){
+            console.log(this.firstName + " " + this.lastName);
+            return(this.firstName + " " + this.lastName);
+        }
+    }
 
-    const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
-    const functionObjectDisplay = document.getElementById('functionObjectDisplay');
-    const customClassDisplay = document.getElementById('customClassDisplay');
+    simpleObject.dynamicMethod = function(){
+        console.log("Dynamic Method");
+        return("This is a dynamically generated method on simpleObject.");
+    }
 
-    const simpleObjectAction =
-        document.getElementById('simpleObjectAction');
-    const functionObjectAction =
-        document.getElementById('functionObjectAction');
-    const customClassAction =
-        document.getElementById('customClassAction');
+    //Constructor function
+    function FunctionObject() {
+        FunctionObject.prototype.sayName = function() {
+            console.log("The name of this function is FunctionObject, a constructor function.");
+            return("The name of this function is FunctionObject, a constructor function.");
+        }
+    }
 
-    simpleObjectAction.onclick = () => {
+    class CustomClass {
+        sayName() {
+            console.log("Custom class.");
+            return("Custom class.");
+        }
+    }
+
+    const functionObject = new FunctionObject();
+    const customClass = new CustomClass();
+
+    const objectLiteralButton = document.getElementById('simpleObjectAction');
+    const functionButton = document.getElementById('functionObjectAction');
+    const customClassButton = document.getElementById('customClassAction');
+    const dynamicMethodButton = document.getElementById('dynamicMethodAction');
+
+    objectLiteralButton.onclick = () => {
         simpleObjectDisplay.textContent = simpleObject.sayName();
-    };
-
-    functionObjectAction.onclick = () => {
-        let obj = new FunctionObject();
-        functionObjectDisplay.textContent = obj.proto();
-    };
-
-    customClassAction.onclick = () => {
-        let customizedObj = new custom("custom object");
-        customClassDisplay.textContent = customizedObj.printMe();
-    };
-};
+    }
+    functionButton.onclick = () => {
+        functionObjectDisplay.textContent = functionObject.sayName();
+    }
+    customClassButton.onclick = () => {
+        customClassDisplay.textContent = customClass.sayName();
+    }
+    dynamicMethodButton.onclick = () => {
+        dynamicMethodDButtonDisplay.textContent = simpleObject.dynamicMethod();
+    }
+}
