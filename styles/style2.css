@@ -20,6 +20,10 @@ h2 {
     padding: 3% 10% 3% 10%;
 }
 
+.center-all2 {
+    text-align: center;
+}
+
 header{
     background-color: #EF9CBA;
     font-family: 'Fredericka the Great', cursive;

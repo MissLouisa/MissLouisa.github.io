@@ -75,4 +75,3 @@ window.onload = () => {
             addToList2.appendToList(newList, arrays.languagesRanking[name].rank, arrays.languagesRanking[name].language);
         }
     };
-};
