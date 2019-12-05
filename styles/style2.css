@@ -109,21 +109,27 @@ section.clear{
 
 .btn-margin-padding {
     border:15px;
-    margin: 25px;
     border-style: ridge;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-color: green;
+    border-color: red;
+    margin: 5% 20% 5% 20%;
+    padding: 3% 5% 3% 5%;
+    width: 70%;
 }
 
 #btn-wrapper {
     background-color: aquamarine;
     display: inline-block;
-    border : thin black solid;
+    border: thin black solid;
+    margin: 5% 10% 5% 10%;
+    padding: 3% 5% 3% 5%;
+    width: 70%;
 }
 
 .btn-margin-padding:active{
-    background-color: red;
+    background-color: black;
+    margin: 5% 10% 5% 10%;
+    padding: 3% 5% 3% 5%;
+    width: 70%;
 }
 /*
 .btn-padding {
