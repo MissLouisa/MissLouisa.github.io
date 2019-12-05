@@ -10,7 +10,6 @@ function simpleFunction() {
 function functionParameters(parameters) {
     console.log(parameters);
 
-    const functionParametersDisplay = document.getElementById("functionParametersDisplay");
     functionParametersDisplay.textContent = parameters;
 }
 

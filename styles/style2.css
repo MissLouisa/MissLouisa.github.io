@@ -38,6 +38,7 @@ footer {
     border: purple solid thin;
     border-radius: 8px;
     color: purple;
+    margin: 2% 0% 2% 0%;
 }
 
 main {
@@ -50,6 +51,7 @@ figure.left {
 
 p, label, ul {
     color: purple;
+    font-size: 18px;
 }
 
 nav {
@@ -208,6 +210,22 @@ input {
 
 #addToListAction {
     margin: 2% 68% 1% 0%;
+    padding: 5px 10px;
+    width: 30%
+}
+
+div {
+    clear: both;
+}
+
+.organized-input {
+    float: left;
+    width: 20%;
+    margin: 2% 5% 1% 0%;
+}
+
+.button-feet {
+    margin: 1% 10% 3% 0%;
     padding: 5px 10px;
     width: 30%
 }
