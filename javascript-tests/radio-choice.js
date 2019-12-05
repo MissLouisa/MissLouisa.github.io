@@ -16,12 +16,17 @@ window.onload = () => {
             setColor("pinkBackground");
             showChoice(value);
         }
-        else if (value.toLowerCase() === 'purple') {
-            setColor("purpleBackground");
+        else if (value.toLowerCase() === 'red') {
+            setColor("redBackground");
             showChoice(value);
         }
         else if (value.toLowerCase() === 'yellow') {
             setColor("yellowBackground");
+            showChoice(value);
+        }
+
+        else if (value.toLowerCase() === 'normal') {
+            setColor("normalBackground");
             showChoice(value);
         }
     });

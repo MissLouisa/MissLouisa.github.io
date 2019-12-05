@@ -224,6 +224,15 @@ input {
     width: 30%
 }
 
+#form-section {
+  margin-top: 10px;
+}
+
+.input-pretty {
+    margin: 0% 1% 1% 1%;
+    width: 3%;
+}
+
 div {
     clear: both;
 }
@@ -245,21 +254,25 @@ div {
 }
 
 .blueBackground {
-    background-color: aqua;
+    background-color: #52DED5;
 }
 
 .greenBackground {
-    background-color: green;
+    background-color: #C5E874;
 }
 
 .yellowBackground {
-    background-color: yellow;
+    background-color: #FFFEBF;
 }
 
-.purpleBackground {
-    background-color: purple;
+.redBackground {
+    background-color: #CC413A;
 }
 
 .pinkBackground {
-    background-color: pink;
+    background-color: #E7B1CE;
+}
+
+.normalBackground {
+    background-color: #EF9CBA;
 }
