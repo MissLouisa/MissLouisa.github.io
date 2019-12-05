@@ -1,16 +1,33 @@
 body {
-    background-color: #EF9CBA;
+    background-color: #7E1312;
     margin: 3% 10% 3% 10%
 }
 
 h1 {
-   color: white;
+   color: #C48433;
    font-size: 30px;
 }
 
 h2 {
-    color: white;
+    color: #C48433;
     font-size: 20px;
+}
+
+#switchStylesAction {
+  margin: 20px;
+  padding: 2% 2%;
+  box-shadow: 0px 5px 3px 2px orange;
+  border-radius: 10px;
+  border: none;
+  font-size: 12pt;
+  color: #C04B3C;
+  background-color: #D0FDF7;
+  width: 20%;
+}
+
+#switchStylesAction:hover {
+  background-color: #A9C2CF;
+  color: black;
 }
 
 .center-all {
@@ -24,8 +41,8 @@ h2 {
     text-align: center;
 }
 
-header{
-    background-color: #EF9CBA;
+header {
+    background-color: #7E1312;
     font-family: 'Fredericka the Great', cursive;
     width: 100%;
     text-align: center;
@@ -33,34 +50,37 @@ header{
 
 header p {
     width: 100%;
-    color: #875AA8;
+    color: #D7E6F7;
     font-size: 20px;
 }
 
 footer {
-    background-color: aliceblue;
+    background-color: #A1406D;
     padding-left: 5px;
     border: purple solid thin;
     border-radius: 8px;
-    color: purple;
     margin: 2% 0% 2% 0%;
 }
 
+#only {
+  color: #140F33;
+}
+
 main {
-    background-color: #EF9CBA;
+    background-color: #7E1312;
 }
 
 figure.left {
     float: left;
 }
 
-p, label, ul, h4 {
-    color: purple;
+p, label, ul, h4, a {
+    color: #BD7000;
     font-size: 18px;
 }
 
 nav {
-    background-color: aliceblue;
+    background-color: #7E1312;
     border: 1px purple solid;
     padding: 1%;
     margin: 1px 0px 0px 0px;
@@ -68,7 +88,7 @@ nav {
 }
 
 nav.top-about {
-    background-color: #FFD6FF;
+    background-color: #F3BF33;
     text-align: center;
     margin: 3% 30% 2% 30%;
 }
@@ -109,36 +129,34 @@ section.clear{
 
 .btn-padding {
     padding: 25px;
-    border: 10px green double;
+    border: 15px purple;
     border-radius: 22px;
 }
 
 .btn-padding:hover {
-    background-color: #CCD6FF;
-    border-color: white;
+    background-color: #9EF75A;
+    border-color: #F2C7CA;
+    border-style: outset;
+    padding: 25px;
+    border-radius: 22px;
 }
 
-button.btn-margin-padding {
-    border:15px;
+.btn-margin-padding {
+    border: 15px;
     border-style: ridge;
-    border-color: red;
+    border-color: #4450CA;
     margin: 5% 20% 5% 20%;
     padding: 3% 5% 3% 5%;
     width: 70%;
-    color: #826EC2;
-    background-color: #FFE6DA;
-}
-
-button.btn-margin-padding:hover {
-    background-color: #CEEBDE;
-    border-color: #E3C842;
-    color: #332D0F;
+    border-width: 5px;
+    color: #7D1958
+    background-color: #DC1496;
 }
 
 #btn-wrapper {
-    background-color: aquamarine;
+    background-color: black;
     display: inline-block;
-    border: thin black solid;
+    border: thin yellow solid;
     margin: 5% 10% 5% 10%;
     padding: 3% 5% 3% 5%;
     width: 70%;
@@ -172,11 +190,10 @@ button {
   display: inline-block;
   padding: 10px 40px;
   font-size: 20px;
-  cursor: pointer;
   text-decoration: none;
   text-align: center;
   color: #fff;
-  background-color: #FF9CD2;
+  background-color: #9DBCB2;
   border-radius: 15px;
   box-shadow: 0 9px #999;
   font-family: 'Quicksand', sans-serif;
@@ -186,13 +203,13 @@ button {
 
 .button:hover {
     color: white;
-    background-color: #E85A75;
+    background-color: #42209B;
     display: inline-block;
     text-decoration: none;
 }
 
 .button:active {
-  background-color: peru;
+  background-color: #C45733;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   text-decoration: none;
@@ -246,24 +263,6 @@ input {
     width: 3%;
 }
 
-#switchStylesAction {
-  margin: 20px;
-  padding: 2% 2%;
-  box-shadow: 0px 5px 3px 2px pink;
-  border-radius: 10px;
-  border: none;
-  font-weight: bold;
-  font-size: 12pt;
-  color: #9790CC;
-  background-color: #E5C8EB;
-  width: 20%;
-}
-
-#switchStylesAction:hover {
-  background-color: #9790CC;
-  color: #E5C8EB;
-}
-
 div {
     clear: both;
 }
@@ -306,4 +305,8 @@ div {
 
 .normalBackground {
     background-color: #EF9CBA;
+}
+
+#new-style {
+  text-align: right;
 }

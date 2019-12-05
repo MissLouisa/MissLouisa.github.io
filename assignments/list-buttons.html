@@ -7,8 +7,12 @@
     <title>Prog 109 Luiza</title>
     <link rel="icon" href="../images/favicon.ico" type="image/png">
     <link rel="stylesheet" href="../styles/style2.css" type="text/css">
+    <link href="../styles/style2.css" rel="stylesheet" type="text/css" id="default">
+    <link href="../styles/dark-mode3.css" rel="alternate stylesheet" type="text/css" id="alternate">
+    <script src="../javascript-tests/dark-mode.js"></script>
     <style>@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text&display=swap');</style>
 </head>
 <body>
     <header>
@@ -20,6 +24,17 @@
             <li><a href="../index.html">Home</a></li>
         </ul>
     </nav>
+
+     <div id="new-style">
+        <h2>Activate Dark Mode</h2>
+            <form id="option-template">
+                <input type="radio" id="alternate" name="switcher" value="Alternate" class="input-pretty" checked/>
+                <label for="alternate">Alternate</label>
+                <input type="radio" id="default" name="switcher" value="Default" class="input-pretty"/>
+                <label for="default">Default</label>
+                <input type="submit" id="switchStylesAction" value="Run"/>
+            </form>
+    </div>
 
     <main>
         <button class = "btn-padding">My button</button>
@@ -53,7 +68,7 @@
     </main>
 
     <footer>
-        <p>Copyright &copy; 2019 by Luiza Cartaxo</p>
+        <p id="only">Copyright &copy; 2019 by Luiza Cartaxo</p>
     </footer>
 </body>
 </html>
