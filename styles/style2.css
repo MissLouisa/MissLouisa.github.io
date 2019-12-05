@@ -48,7 +48,7 @@ figure.left {
     float: left;
 }
 
-p, label {
+p, label, ul {
     color: purple;
 }
 
@@ -155,7 +155,7 @@ button {
   border-radius: 15px;
   box-shadow: 0 9px #999;
   font-family: 'Quicksand', sans-serif;
-  margin: 2% 65% 10% 25%;
+  margin: 5% 25% 5% 25%;
   width: 50%;
 }
 
@@ -191,13 +191,25 @@ img.bigger {
 
 input {
     width: 40%;
-    margin: 1% 40% 1% 30%;
+    margin: 2% 58% 2% 0%;
     font-size: 16px;
 }
 
 #inputNotInTheMiddle {
     width: 40%;
     margin: 3% 30% 3% 30%;
+}
+
+#functionCallsAction {
+    margin: 2% 65% 5% 0%;
+    padding: 5px 10px;
+    width: 35%
+}
+
+#addToListAction {
+    margin: 2% 68% 1% 0%;
+    padding: 5px 10px;
+    width: 30%
 }
 
 .blueBackground {
