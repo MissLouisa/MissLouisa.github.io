@@ -230,6 +230,10 @@ div {
     width: 30%
 }
 
+.thin-button {
+    padding: 5px 10px;
+}
+
 .blueBackground {
     background-color: aqua;
 }
