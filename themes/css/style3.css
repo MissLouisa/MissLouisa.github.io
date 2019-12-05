@@ -113,14 +113,13 @@ nav li {
     text-decoration: none;
 }
 
-.button {
+button {
   display: inline-block;
   padding: 10px 40px;
   font-size: 20px;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
- /* outline: none;*/
   color: #fff;
   background-color: #FF9CD2;
   border-radius: 15px;
@@ -128,14 +127,12 @@ nav li {
   font-family: 'Quicksand', sans-serif;
 }
 
-.button:hover {
+button:hover {
     color: white;
     background-color: #E85A75;
-    display: inline-block;
-    text-decoration: none;
 }
 
-.button:active {
+button:active {
   background-color: peru;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -144,7 +141,11 @@ nav li {
 
 a {
     text-decoration: none;
-    color: #9E81C1;
+    color: #E414E8;
+}
+
+a:hover {
+  color: white;
 }
 
 #me {
@@ -199,10 +200,6 @@ p.center {
 
 p.right {
     text-align: right;
-}
-
-#special a:hover {
-    color: white;
 }
 
 #like-p {

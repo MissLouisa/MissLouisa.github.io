@@ -1,5 +1,5 @@
 body {
-    background-color: #140F33 ;
+    background-color: #140F33;
     margin: 3% 10% 3% 10%
 }
 
@@ -207,7 +207,7 @@ button {
 }
 
 .button:active {
-  background-color: peru;
+  background-color: #58B9C7;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   text-decoration: none;
