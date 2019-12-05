@@ -12,8 +12,10 @@ h2 {
     font-size: 20px;
 }
 
-#new-font {
-    font-family: fantasy, cursive, serif;
+.center-all {
+    text-align: center;
+    width: 40%;
+    margin: 1% 10% 5% 30%;
 }
 
 header{

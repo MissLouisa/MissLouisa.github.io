@@ -7,14 +7,15 @@ const elfCode = {
 };
 
 window.onload = () => {
-    const simpleFunctionDisplay = document.getElementById('functionCallsAction');
-    const functionCallsAction = document.getElementById('addToListAction');
-    functionCallsAction.onclick = simpleFunction;
+    const functionCalls = document.getElementById('functionCallsAction');
+    const addToListAction = document.getElementById('addToListAction');
 
     console.log('foo');
     functionCalls.onclick = () => {
         // Both these functions get their display control
         simpleFunction();
+        functionParameters(value);
+        functionReturn();
     };
 
     addToListAction.onclick = () => {
@@ -29,27 +30,32 @@ window.onload = () => {
         const displayText = "Functions should consist of statements designed to perform a single task.";
         console.log(displayText);
 
-        const simpleFunctionDisplay = document.getElementById("simpleFunctionDisplay");
-        simpleFunctionDisplay.textContent = displayText;
+        const simpleFunctionDisplay2 = document.getElementById("simpleFunctionDisplay2");
+        simpleFunctionDisplay2.textContent = displayText;
     }
 
     function functionParameters(value) {
         console.log(value);
+
+        const functionParametersDisplay = document.getElementById("functionParameters");
+        functionParametersDisplay.textContent = value;
     }
 
-    function functionReturn(result) {
-        return "the add function returned " + result;
-    }
+    function functionReturn() {
+        const displayReturn = "Many functions return values.";
 
-    function add(a, b) {
-        return a + b;
+        const functionReturnDisplay = document.getElementById("functionReturn");
+        functionReturnDisplay.textContent = displayReturn;
+        return displayReturn;
     }
 
     functionCallsAction.onclick = function() {
-        simple();
+        simpleFunction();
+        functionParameters(value);
+        functionReturn();
     }
+
+    functionParameters("Many functions take parameters.");
 }
 
-//simpleFunction();
-functionParameters("print me");
-}
+
