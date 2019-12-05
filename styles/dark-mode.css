@@ -1,5 +1,5 @@
 body {
-    background-color: #EF9CBA;
+    background-color: #140F33 ;
     margin: 3% 10% 3% 10%
 }
 
@@ -11,6 +11,24 @@ h1 {
 h2 {
     color: white;
     font-size: 20px;
+}
+
+#switchStylesAction {
+  margin: 20px;
+  padding: 2% 2%;
+  box-shadow: 0px 5px 3px 2px white;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 12pt;
+  color: white;
+  background-color: black;
+  width: 20%;
+}
+
+#switchStylesAction:hover {
+  background-color: white;
+  color: black;
 }
 
 .center-all {
@@ -25,7 +43,7 @@ h2 {
 }
 
 header{
-    background-color: #EF9CBA;
+    background-color: #140F33;
     font-family: 'Fredericka the Great', cursive;
     width: 100%;
     text-align: center;
@@ -46,7 +64,7 @@ footer {
 }
 
 main {
-    background-color: #EF9CBA;
+    background-color: #140F33;
 }
 
 figure.left {
@@ -141,6 +159,12 @@ section.clear{
     padding: 3% 5% 3% 5%;
     width: 70%;
 }
+/*
+.btn-padding {
+    border-width: 10px;
+    border-color: green;
+    border-style: solid;
+} */
 
 aside {
     background-color: bisque;
@@ -235,24 +259,6 @@ input {
 .input-pretty {
     margin: 0% 1% 1% 1%;
     width: 3%;
-}
-
-#switchStylesAction {
-  margin: 20px;
-  padding: 2% 2%;
-  box-shadow: 0px 5px 3px 2px pink;
-  border-radius: 10px;
-  border: none;
-  font-weight: bold;
-  font-size: 12pt;
-  color: #9790CC;
-  background-color: #E5C8EB;
-  width: 20%;
-}
-
-#switchStylesAction:hover {
-  background-color: #9790CC;
-  color: #E5C8EB;
 }
 
 div {

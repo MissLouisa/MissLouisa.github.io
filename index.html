@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prog 109 Luiza</title>
     <link rel="icon" href="images/favicon.ico" type="image/png">
-    <link rel="stylesheet" href="styles/style2.css" type="text/css">
+    <link href="styles/style2.css" rel="stylesheet" type="text/css" id="default">
+    <link href="styles/dark-mode.css" rel="alternate stylesheet" type="text/css" id="alternate">
+    <script src="javascript-tests/dark-mode.js"></script>
     <style>@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');</style>
     <style>@import url('https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap');</style>
 </head>
@@ -44,6 +46,17 @@
             <li><a href="assignments/week04-day01.html">Week04 Day 1</a></li>
         </ul>
         </nav>
+
+        <div id="style-switcher">
+        <h2>Activate Dark Mode</h2>
+            <form id="change-style">
+                <input type="radio" id="alternate" name="switcher" value="Alternate" class="input-pretty" checked/>
+                <label for="alternate">Alternate</label>
+                <input type="radio" id="default" name="switcher" value="Default" class="input-pretty"/>
+                <label for="default">Default</label>
+                <input type="submit" id="switchStylesAction" value="Run"/>
+            </form>
+        </div>
 
         <ul>
             <li><a href="#block01">Block One</a></li>

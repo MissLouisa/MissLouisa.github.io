@@ -1,5 +1,5 @@
 body {
-    background-color: #EAD6FF;
+    background-color: #140F33;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -15,7 +15,7 @@ h3 {
 }
 
 header {
-    background-color: #EAD6FF;
+    background-color: #140F33;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ footer {
 }
 
 main {
-    background-color: #EAD6FF;
+    background-color: #140F33;
 }
 
 figure.left {
@@ -77,14 +77,13 @@ aside {
 }
 */
 .start {
-    background-color: #EAD6FF;
+    background-color: #140F33;
     padding: 8px;
     margin: -1px 0px 0px 0px;
     text-align: center;
 
 }
 nav {
-
     padding: 8px;
     margin: -1px 0px 0px 0px;
     font-size-adjust: auto;
@@ -240,12 +239,12 @@ table {
     height: 100%;
 }
 
-section.clear-left {
+section.clear-left{
     clear: left;
 }
 
 
-section.clear-right {
+section.clear-right{
     clear: right;
 }
 
