@@ -1,0 +1,312 @@
+body {
+    background-color: #7E1312;
+    margin: 3% 10% 3% 10%
+}
+
+h1 {
+   color: #C48433;
+   font-size: 30px;
+}
+
+h2 {
+    color: #C48433;
+    font-size: 20px;
+}
+
+#switchStylesAction {
+  margin: 20px;
+  padding: 2% 2%;
+  box-shadow: 0px 5px 3px 2px orange;
+  border-radius: 10px;
+  border: none;
+  font-size: 12pt;
+  color: #C04B3C;
+  background-color: #D0FDF7;
+  width: 20%;
+}
+
+#switchStylesAction:hover {
+  background-color: #A9C2CF;
+  color: black;
+}
+
+.center-all {
+    text-align: center;
+    width: 40%;
+    margin: 3% 30% 3% 30%;
+    padding: 3% 10% 3% 10%;
+}
+
+.center-all2 {
+    text-align: center;
+}
+
+header {
+    background-color: #7E1312;
+    font-family: 'Fredericka the Great', cursive;
+    width: 100%;
+    text-align: center;
+}
+
+header p {
+    width: 100%;
+    color: #D7E6F7;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #A1406D;
+    padding-left: 5px;
+    border: purple solid thin;
+    border-radius: 8px;
+    margin: 2% 0% 2% 0%;
+}
+
+#only {
+  color: #140F33;
+}
+
+main {
+    background-color: #7E1312;
+}
+
+figure.left {
+    float: left;
+}
+
+p, label, ul, h4, a {
+    color: #BD7000;
+    font-size: 18px;
+}
+
+nav {
+    background-color: #7E1312;
+    border: 1px purple solid;
+    padding: 1%;
+    margin: 1px 0px 0px 0px;
+    font-family: 'Londrina Solid', cursive;
+}
+
+nav.top-about {
+    background-color: #F3BF33;
+    text-align: center;
+    margin: 3% 30% 2% 30%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 120%;
+}
+
+nav li {
+    display: inline;
+    padding: 8px;
+}
+
+.fit-picture {
+    width: 300px;
+    height: 300px;
+}
+
+section.clear{
+    clear: both;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+#new-font {
+  font-family: 'Indie Flower', cursive;
+}
+
+.btn-padding {
+    padding: 25px;
+    border: 15px purple;
+    border-radius: 22px;
+}
+
+.btn-padding:hover {
+    background-color: #9EF75A;
+    border-color: #F2C7CA;
+    border-style: outset;
+    padding: 25px;
+    border-radius: 22px;
+}
+
+.btn-margin-padding {
+    border: 15px;
+    border-style: ridge;
+    border-color: #4450CA;
+    margin: 5% 20% 5% 20%;
+    padding: 3% 5% 3% 5%;
+    width: 70%;
+    border-width: 5px;
+    color: #7D1958
+    background-color: #DC1496;
+}
+
+#btn-wrapper {
+    background-color: black;
+    display: inline-block;
+    border: thin yellow solid;
+    margin: 5% 10% 5% 10%;
+    padding: 3% 5% 3% 5%;
+    width: 70%;
+}
+
+.btn-margin-padding:active{
+    background-color: black;
+    margin: 5% 10% 5% 10%;
+    padding: 3% 5% 3% 5%;
+    width: 70%;
+}
+
+aside {
+    background-color: bisque;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: right;
+    font-style: italic;
+    margin-right: 5px;
+    padding: 8px;
+    width: 33%;
+}
+
+#simpleBranchDisplay {
+    text-align: center;
+    color: purple;
+    font-size: 100%;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: #9DBCB2;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: 'Quicksand', sans-serif;
+  margin: 5% 25% 5% 25%;
+  width: 50%;
+}
+
+.button:hover {
+    color: white;
+    background-color: #42209B;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:active {
+  background-color: #C45733;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  text-decoration: none;
+}
+
+p.center {
+    text-align: center;
+}
+
+img.center-img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+img.bigger {
+    width: 70%;
+    margin: 1% 15% 1% 15%;
+}
+
+input {
+    width: 40%;
+    margin: 2% 58% 2% 0%;
+    font-size: 16px;
+}
+
+#inputNotInTheMiddle {
+    width: 40%;
+    margin: 3% 30% 3% 30%;
+}
+
+#functionCallsAction {
+    margin: 2% 65% 5% 0%;
+    padding: 5px 10px;
+    width: 35%
+}
+
+#addToListAction {
+    margin: 2% 68% 1% 0%;
+    padding: 5px 10px;
+    width: 30%
+}
+
+#form-section {
+  margin-top: 10px;
+}
+
+.input-pretty {
+    margin: 0% 1% 1% 1%;
+    width: 3%;
+}
+
+div {
+    clear: both;
+}
+
+.organized-input {
+    float: left;
+    width: 20%;
+    margin: 2% 5% 1% 0%;
+}
+
+.button-feet {
+    margin: 1% 10% 3% 0%;
+    padding: 5px 10px;
+    width: 30%
+}
+
+.thin-button {
+    padding: 5px 10px;
+}
+
+.blueBackground {
+    background-color: #52DED5;
+}
+
+.greenBackground {
+    background-color: #C5E874;
+}
+
+.yellowBackground {
+    background-color: #FFFEBF;
+}
+
+.redBackground {
+    background-color: #CC413A;
+}
+
+.pinkBackground {
+    background-color: #E7B1CE;
+}
+
+.normalBackground {
+    background-color: #EF9CBA;
+}
+
+#new-style {
+  text-align: right;
+}

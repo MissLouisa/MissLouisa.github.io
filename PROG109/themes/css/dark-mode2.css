@@ -1,0 +1,255 @@
+body {
+    background-color: #140F33;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+   color: #C7EBCD;
+   font-size: 25px;
+   text-align: center;
+}
+
+h3 {
+    color: #E85A75;
+    text-align: center;
+}
+
+header {
+    background-color: #140F33;
+    text-align: center;
+}
+
+header p {
+    font-weight: bold;
+    color: #338C77;
+    text-align: center;
+}
+
+footer {
+    background-color: aliceblue;
+    padding-left: 5px;
+    border: black solid thin;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+main {
+    background-color: #140F33;
+}
+
+figure.left {
+    float: left;
+}
+
+figure.right {
+    float: right;
+}
+
+aside {
+    background-color: pink;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: right;
+    font-style: italic;
+    margin-right: 2px;
+    padding: 8px;
+    width: 40%;
+}
+
+.btn-margin-padding {
+    border: 5px;
+    margin: 7px;
+    border-style: groove;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: deeppink;
+}
+
+.start {
+    background-color: #140F33;
+    padding: 8px;
+    margin: -1px 0px 0px 0px;
+    text-align: center;
+}
+
+nav {
+    padding: 8px;
+    margin: -1px 0px 0px 0px;
+    font-size-adjust: auto;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 8px;
+    margin: -1px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size-adjust: auto;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    padding: 8px;
+    margin: -1px 0px 0px 0px;
+    text-align: center;
+    font-size-adjust: auto;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #FFF4CC;
+  background-color: #F59267;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+button:hover {
+    color: white;
+    background-color: #FFF4CC;
+    display: inline-block;
+    text-decoration: none;
+}
+
+button:active {
+  background-color: #58B9C7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #616B41;
+}
+
+#me {
+    width: 6%;
+    height: 6%;
+    border: 3px solid pink;
+}
+
+#mario-video {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    float: none;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#left {
+  float: right;
+  height: 155px;
+  padding-right: 0px;
+  margin-left: 0px;
+  width: 165px;
+  margin-right: 0px;
+}
+
+#right {
+  float: right;
+  height: 170px;
+  padding-right: 0px;
+  margin-left: 0px;
+  width: 200px;
+  margin-right: 0px;
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.right {
+    text-align: right;
+}
+
+a:hover {
+  color: #9FA189;
+}
+
+#like-p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-flow: row-reverse wrap;
+    padding: 10px;
+    width: 200px;
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 1.5;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 1px;
+    text-align: left;
+}
+
+table {
+    border-collapse: initial;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+section.clear-left{
+    clear: left;
+}
+
+
+section.clear-right{
+    clear: right;
+}
+
+#white-space {
+    margin-top: 50px;
+}
+
+#special-choice {
+  text-align: center;
+  width: 60%;
+  margin: 1% 20% 3% 20%;
+  font-size: 12px;
+  color: #E85A75;
+}
+
+#switchStylesAction {
+  color: #140F33;
+  background-color: #C7EBCD;
+  box-shadow: 0px 2px 3px 2px white;
+  margin-left: 10px;
+}
