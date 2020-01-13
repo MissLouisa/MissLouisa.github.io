@@ -15,7 +15,8 @@ p {
 #centerh1 {
     margin: auto;
     width: 20%;
-    padding: 10px;
+    padding: 5%;
+    font-size: 250%;
 }
 
 #centerp {
