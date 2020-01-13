@@ -32,7 +32,7 @@ main {
 }
 
 a.button {
-    margin-top: 5%;
+    margin: 3% 3% 3% 3%;
     box-shadow: 0px 0px 0px 2px #9fb4f2;
     background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
     background-color: #7892c2;
@@ -65,6 +65,7 @@ a.button:active {
 }
 
 footer {
+    text-align: center;
     margin: auto;
     width: 35%;
     padding: 50px;
