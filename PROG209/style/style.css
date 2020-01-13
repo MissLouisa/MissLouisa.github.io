@@ -1,0 +1,10 @@
+body {
+    background-color: #E0EBFF;
+    background-image: linear-gradient(to right, #EAD4FF 0%, #B7B3EB 51%, #B3C3E8 75%);
+    opacity: 0.95;
+}
+
+h1 {
+    font-family: 'IM Fell English SC', serif;
+}
+
