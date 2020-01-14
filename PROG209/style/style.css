@@ -7,6 +7,17 @@ body {
 h1 {
     text-align: center;
     font-family: 'IM Fell English SC', serif;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid purple;
+    width: 35%;
+    position: relative;
+    bottom: -6px;
 }
 
 p {
