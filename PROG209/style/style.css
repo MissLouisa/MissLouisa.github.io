@@ -18,3 +18,21 @@ p {
     text-align: center;
 }
 
+#switchStylesAction {
+    margin: 20px;
+    padding: 2% 2%;
+    box-shadow: 0px 5px 3px 2px pink;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #9790CC;
+    background-color: #E5C8EB;
+    width: 20%;
+  }
+  
+  #switchStylesAction:hover {
+    background-color: #9790CC;
+    color: #E5C8EB;
+  }
+
