@@ -35,7 +35,7 @@ p {
 
 button {
     box-shadow: 0 8px 16px 0 #9790CC, 0 6px 20px 0 #E5C8EB;
-    width: 11%;
+    width: 15%;
     background-color: #9790CC;
     text-align: center;
     border: 1px solid #E5C8EB;
@@ -52,6 +52,7 @@ button {
   
 button:hover {
     box-shadow: 0 15px 16px 0 rgb(164, 160, 194), 0 17px 50px 0 #E5C8EB;
+    width: 15%;
     background-color: rgb(197, 163, 204);
     text-align: center;
     border: 1px solid rgb(243, 233, 245);
@@ -94,7 +95,7 @@ section {
     color: #9790CC;
     font-size: 180%;
     margin: auto;
-    height: 150%;
+    height: 180px;
     width: 30%;
     border: 3px solid #E5C8EB;
     padding: 10px;
