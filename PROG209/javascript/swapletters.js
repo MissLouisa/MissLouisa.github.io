@@ -1,4 +1,4 @@
-///necessary to swap the letters
+//necessary to swap the letters
 function reverse_str(s) {
     let str = s.split("");
     let rs = str.reverse();
@@ -48,11 +48,12 @@ function offline() {
         v.firstChild.remove();
     }
 
-    //new li, it is with the words swapped
-    for (let j = 0; j < arrayWords.length; j++) {
+    //new li, it is with the words swapped         
+    let newWord = arrayWords.map(x => reverse_str(x));
+    for (let j = 0; j < 3; j++) {
         let li = document.createElement('li');
-        let newword = reverse_str(arrayWords[j])
-        li.appendChild(document.createTextNode(newword));
+        li.appendChild(document.createTextNode(newWord[j]));
         v.appendChild(li);
     }
+    
 }
