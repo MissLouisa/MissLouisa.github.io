@@ -89,7 +89,7 @@ section {
     text-align: center;
 }
 
-#spacetoswap {
+#spaceToSwap {
     text-align: center;
     background-color: white;
     color: #9790CC;
@@ -99,4 +99,8 @@ section {
     width: 30%;
     border: 3px solid #E5C8EB;
     padding: 10px;
+}
+
+li {
+    font-size: 70%;
 }

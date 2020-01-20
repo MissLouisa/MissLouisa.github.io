@@ -19,10 +19,13 @@
 </header>
 
 <body>
-    <button id="words" onclick="wordByUser()">Start</button>
-    <section id="spacetoswap">
-        <p id="input"></p>
+    <button id="wordByUser" onclick="getWord()" style="visibility: visible" display=none id="toggler2">Start</button>
+    <section id="spaceToSwap">
+        <ul id="listDisplay"></ul>
     </section>
+
+    <button onclick="offline()" style="visibility: hidden" display=none id="toggler">Swap the Words!</button>
+
     <script src="../../javascript/swapletters.js"></script>
 </body>
 </html>
