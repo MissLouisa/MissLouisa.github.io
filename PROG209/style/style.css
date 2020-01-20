@@ -3,6 +3,10 @@ body {
     background-image: linear-gradient(to right, #EAD4FF 0%, #B7B3EB 51%, #B3C3E8 75%);
     opacity: 0.95;
 }
+h2 {    
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+}
 
 h1 {
     text-align: center;
@@ -29,6 +33,39 @@ p {
     text-align: center;
 }
 
+button {
+    box-shadow: 0 8px 16px 0 #9790CC, 0 6px 20px 0 #E5C8EB;
+    width: 9%;
+    background-color: #9790CC;
+    text-align: center;
+    border: 1px solid #E5C8EB;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 120%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+button:hover {
+    box-shadow: 0 15px 16px 0 rgb(164, 160, 194), 0 17px 50px 0 #E5C8EB;
+    background-color: rgb(197, 163, 204);
+    text-align: center;
+    border: 1px solid rgb(243, 233, 245);
+    font-family: 'IM Fell English SC', serif;
+    font-size: 120%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #switchStylesAction {
     margin: 20px;
     padding: 2% 2%;
@@ -40,10 +77,25 @@ p {
     color: #9790CC;
     background-color: #E5C8EB;
     width: 20%;
-  }
+}
   
-  #switchStylesAction:hover {
+#switchStylesAction:hover {
     background-color: #9790CC;
     color: #E5C8EB;
-  }
+}
 
+section {
+    text-align: center;
+}
+
+#spacetoswap {
+    text-align: center;
+    background-color: white;
+    color: #9790CC;
+    font-size: 180%;
+    margin: auto;
+    height: 150%;
+    width: 30%;
+    border: 3px solid #E5C8EB;
+    padding: 10px;
+}
