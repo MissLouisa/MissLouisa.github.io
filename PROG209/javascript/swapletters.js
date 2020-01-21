@@ -1,8 +1,13 @@
 //necessary to swap the letters
 function reverse_str(s) {
     let str = s.split("");
-    let rs = str.reverse();
-    return rs.join("");
+    let l1 = str[0];
+    let l2 = str[str.length - 1];
+
+    str[0] = l2;
+    str[str.length - 1]  = l1;
+
+    return str.join('');
 }
 
 let arrayWords = [];
@@ -55,5 +60,4 @@ function offline() {
         li.appendChild(document.createTextNode(newWord[j]));
         v.appendChild(li);
     }
-    
 }
