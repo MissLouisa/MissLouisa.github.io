@@ -101,6 +101,18 @@ section {
     padding: 10px;
 }
 
+#cardGamesHere {
+    text-align: center;
+    background-color: white;
+    color: #9790CC;
+    font-size: 150%;
+    margin: auto;
+    height: 260px;
+    width: 40%;
+    border: 3px solid #E5C8EB;
+    padding: 10px;
+}
+
 li {
     font-size: 70%;
 }
