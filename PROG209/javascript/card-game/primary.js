@@ -5,16 +5,16 @@ document.addEventListener("DOMContentLoader", function (event) {
     let computerArray = [26];
 
     //button deal start visible
-    document.getElementById('startGame').style.visibility = 'visible';
+    //document.getElementById('startGame').style.visibility = 'visible';
 
     //button next is hidden
-    document.getElementById('next').style.visibility = 'hidden';
+    //document.getElementById('next').style.visibility = 'hidden';
 
-    document.getElementById("deal").addEventListener("click", function () {
+    document.getElementById('startGame').addEventListener("click", function () {
         deck.loadCards();
         //button deal become hidden
         document.getElementById('startGame').style.visibility = 'hidden';
-        for (int i = 0; i < 26; i++) {
+        for (let i = 0; i < 26; i++) {
             this.playerArray[i] = this.deck.cardArray[i];
             this.computerArray[i] = this.deck.cardArray[i+26];
         }

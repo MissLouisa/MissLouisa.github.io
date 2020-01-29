@@ -6,7 +6,3 @@ let deck = {
         }
     }
 }
-
-let card = function (pSuit, pRank) {
-    this.pSuite
-}
