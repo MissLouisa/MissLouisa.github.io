@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoader", function (event) {
     let computerArray = [26];
 
     //button deal start visible
-    document.getElementById('startGame').style.visibility = 'visibility';
+    document.getElementById('startGame').style.visibility = 'visible';
 
     //button next is hidden
     document.getElementById('next').style.visibility = 'hidden';
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoader", function (event) {
         console.log(deck.computerArray);
 
         //button next is visible now
-        document.getElementById('next').style.visibility = 'visibility';
+        document.getElementById('next').style.visibility = 'visible';
     });
 
     document.getElementById("next").addEventListener("click"),function () {
