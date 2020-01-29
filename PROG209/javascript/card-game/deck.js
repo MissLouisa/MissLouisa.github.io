@@ -1,8 +1,17 @@
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+
 let deck = {
     'cardArray' : [], //array
     'loadCards' : function() { //method
         for (let i = 0; i < 52; i++) {
-            this.cardArray[i] = new cardGame(math.Random() % 4, 1 + math.Random() % 13); //%4 because it's between 1 to 4; 1+ %13 because it is between 2 to 14
+            this.cardArray[i] = new cardGame(getRandomInt(4), 1 + getRandomInt(13));
         }
     }
+}
+
+for (i=0; i < 26;i++) {
+    this.playerArray[i] = this.deck.cardArray[i];
+    this.computerArray[i] = this.deck.cardArray[i+26];
 }

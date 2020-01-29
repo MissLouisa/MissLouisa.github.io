@@ -12,8 +12,8 @@ function startGameEvent() {
     //button deal become hidden
     document.getElementById('startGame').style.visibility = 'hidden';
     for (let i = 0; i < 26; i++) {
-        this.playerArray[i] = this.deck.cardArray[i];
-        this.computerArray[i] = this.deck.cardArray[i+26];
+        playerArray[i] = deck.cardArray[i];
+        computerArray[i] = deck.cardArray[i+26];
     }
 
     console.log(deck.playerArray);
