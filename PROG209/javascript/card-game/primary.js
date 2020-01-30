@@ -70,25 +70,11 @@ function nextEvent () {
     secElement.appendChild(turn_data);
  
     if (playerArray[turnNumber].getRank() == computerArray[turnNumber].getRank()) {
-        if (playerArray[turnNumber].getSuit() > computerArray[turnNumber].getSuit()) {
-            playerScore = playerScore + 1;
-            turn_data = document.createElement('h2');
-            turn_node = document.createTextNode('You won!');
-            turn_data.appendChild(turn_node);
-            secElement.appendChild(turn_data);
-        } else if (playerArray[turnNumber].getSuit() == computerArray[turnNumber].getSuit()){
-            turn_data = document.createElement('h2');
-            turn_node = document.createTextNode('It\'s a tie!');
-            turn_data.appendChild(turn_node);
-            secElement.appendChild(turn_data);
-        } else {
-            computerScore = computerScore + 1;
-            turn_data = document.createElement('h2');
-            turn_node = document.createTextNode('You lost!');
-            turn_data.appendChild(turn_node);
-            secElement.appendChild(turn_data);
-        }
-    } else if (playerArray[turnNumber].getRank() > computerArray[turnNumber].getRank()) {
+        turn_data = document.createElement('h2');
+        turn_node = document.createTextNode('It\'s a tie!');
+        turn_data.appendChild(turn_node);
+        secElement.appendChild(turn_data);
+    }  else if (playerArray[turnNumber].getRank() > computerArray[turnNumber].getRank()) {
         playerScore = playerScore + 1;
         turn_data = document.createElement('h2');
         turn_node = document.createTextNode('You won!');
