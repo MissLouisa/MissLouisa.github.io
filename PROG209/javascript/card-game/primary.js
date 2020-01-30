@@ -5,7 +5,7 @@ let computerScore = 0;
 let turnNumber = 0;
 
 let cardFour = ['SPADE', 'CLUB', 'DIAMOND', 'HEART'];
-let cardFour2 = ['2','3','4','5','6','7','8','9','10','JACK','QUEEN','KING','ACE'];card
+let cardFour2 = ['2','3','4','5','6','7','8','9','10','JACK','QUEEN','KING','ACE'];
 
 
 function startGameEvent() {
@@ -44,54 +44,54 @@ function nextEvent () {
         return;       
     }
 
-    let turn_data = document.createElement('p')
-    let turn_node = document.createTextNode('Turn Number: ' + turnNumber.toString())
+    let turn_data = document.createElement('p');
+    let turn_node = document.createTextNode('Turn Number: ' + turnNumber.toString());
     turn_data.appendChild(turn_node);
     secElement.appendChild(turn_data);
 
-    turn_data = document.createElement('p')
-    turn_node = document.createTextNode('Player Score: ' + playerScore.toString())
+    turn_data = document.createElement('h5');
+    turn_node = document.createTextNode('Player Score: ' + playerScore.toString());
     turn_data.appendChild(turn_node);
     secElement.appendChild(turn_data);
 
-    turn_data = document.createElement('p')
-    turn_node = document.createTextNode('Player Card: ' + cardFour[playerArray[turnNumber].getRank()],)
+    turn_data = document.createElement('p');
+    turn_node = document.createTextNode('Player Card: ' + cardFour[playerArray[turnNumber].getSuit()] + ' ' + cardFour2[playerArray[turnNumber].getRank()]);
     turn_data.appendChild(turn_node);
     secElement.appendChild(turn_data);
 
-    turn_data = document.createElement('p')
-    turn_node = document.createTextNode('Computer Score: ' + computerScore.toString())
+    turn_data = document.createElement('h5');
+    turn_node = document.createTextNode('Computer Score: ' + computerScore.toString());
     turn_data.appendChild(turn_node);
     secElement.appendChild(turn_data);
 
-    turn_data = document.createElement('p')
-    turn_node = document.createTextNode('Computer Card: ' + cardFour[computerArray[turnNumber].getRank().toString()])
+    turn_data = document.createElement('p');
+    turn_node = document.createTextNode('Computer Card: ' + cardFour[computerArray[turnNumber].getSuit()] + ' ' +cardFour2[playerArray[turnNumber].getRank()]);
     turn_data.appendChild(turn_node);
     secElement.appendChild(turn_data);
  
     if (playerArray[turnNumber].getRank() == computerArray[turnNumber].getRank()) {
         if (playerArray[turnNumber].getSuit() > computerArray[turnNumber].getSuit()) {
             playerScore = playerScore + 1;
-            turn_data = document.createElement('p')
+            turn_data = document.createElement('h2');
             turn_node = document.createTextNode('You won!');
             turn_data.appendChild(turn_node);
             secElement.appendChild(turn_data);
         } else {
             computerScore = computerScore + 1;
-            turn_data = document.createElement('p')
+            turn_data = document.createElement('h2');
             turn_node = document.createTextNode('You lost!');
             turn_data.appendChild(turn_node);
             secElement.appendChild(turn_data);
         }
     } else if (playerArray[turnNumber].getRank() > computerArray[turnNumber].getRank()) {
         playerScore = playerScore + 1;
-        turn_data = document.createElement('p')
+        turn_data = document.createElement('h2');
         turn_node = document.createTextNode('You won!');
         turn_data.appendChild(turn_node);
         secElement.appendChild(turn_data);
     } else {
         computerScore = computerScore + 1;
-        turn_data = document.createElement('p')
+        turn_data = document.createElement('h2');
         turn_node = document.createTextNode('You lost!');
         turn_data.appendChild(turn_node);
         secElement.appendChild(turn_data);
