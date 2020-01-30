@@ -1,4 +1,4 @@
-function cardGame(suit, rank) {
+function cardGame(rank, suit) {
     this.suit = suit;
     this.rank = rank;
 }

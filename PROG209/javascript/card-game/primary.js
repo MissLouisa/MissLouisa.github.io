@@ -30,7 +30,7 @@ function nextEvent () {
     secElement.innerHTML = '';
 
     if (turnNumber >= 26) {
-        let d = document.createElement('p');
+        let d = document.createElement('h2');
         let winner = '';
         if (playerScore >= computerScore) {
             winner = 'Player!';
@@ -55,7 +55,7 @@ function nextEvent () {
     secElement.appendChild(turn_data);
 
     turn_data = document.createElement('p');
-    turn_node = document.createTextNode('Player Card: ' + cardFour[playerArray[turnNumber].getSuit()] + ' ' + cardFour2[playerArray[turnNumber].getRank()]);
+    turn_node = document.createTextNode('Player Card: ' + cardFour2[playerArray[turnNumber].getRank()] + ' ' + cardFour[playerArray[turnNumber].getSuit()]);
     turn_data.appendChild(turn_node);
     secElement.appendChild(turn_data);
 
@@ -65,7 +65,7 @@ function nextEvent () {
     secElement.appendChild(turn_data);
 
     turn_data = document.createElement('p');
-    turn_node = document.createTextNode('Computer Card: ' + cardFour[computerArray[turnNumber].getSuit()] + ' ' +cardFour2[playerArray[turnNumber].getRank()]);
+    turn_node = document.createTextNode('Computer Card: ' + cardFour2[computerArray[turnNumber].getRank()] + ' ' + cardFour[computerArray[turnNumber].getSuit()]);
     turn_data.appendChild(turn_node);
     secElement.appendChild(turn_data);
  
@@ -74,6 +74,11 @@ function nextEvent () {
             playerScore = playerScore + 1;
             turn_data = document.createElement('h2');
             turn_node = document.createTextNode('You won!');
+            turn_data.appendChild(turn_node);
+            secElement.appendChild(turn_data);
+        } else if (playerArray[turnNumber].getSuit() == computerArray[turnNumber].getSuit()){
+            turn_data = document.createElement('h2');
+            turn_node = document.createTextNode('It\'s a tie!');
             turn_data.appendChild(turn_node);
             secElement.appendChild(turn_data);
         } else {
