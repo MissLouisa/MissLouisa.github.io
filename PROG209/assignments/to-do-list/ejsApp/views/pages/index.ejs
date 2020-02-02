@@ -1,0 +1,55 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <!-- CSS should be in a file -->
+    <style>
+    .jumbotron
+    {
+      background-color: white;
+    }
+    </style>
+</head>
+<body class="container">
+<style>
+  .body 
+  {
+    color: black;
+  }
+</style>
+
+<header>
+    <% include ../partials/header %>
+</header>
+<main>
+ 
+  <div class="jumbotron">
+  <style>
+    .jumbotron 
+    {
+      background-color: #E0EBFF;
+      background-image: linear-gradient(to right, #EAD4FF 0%, #B7B3EB 51%, #B3C3E8 75%);
+    }
+  </style>
+    <div class="p-3 mb-2 bg-warning text-dark">
+    <style>
+    .bg-warning 
+    {
+      background-color: #E0EBFF;
+      background-image: linear-gradient(to right, #EAD4FF -10%, #B7B3EB 55%, #B3C3E8 75%);
+    }
+    </style>
+    <h1>Hello there!</h1>
+    <p>Welcome to templating using EJS</p>
+  </div>
+</div>
+</main>
+
+<footer>
+  <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>

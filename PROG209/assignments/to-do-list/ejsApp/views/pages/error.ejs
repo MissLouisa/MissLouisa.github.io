@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+
+<h2><i><%= message %></i></h2>
+<h3 class="text-danger"><%= error.status %></h3>
+<pre><%= error.stack %></pre>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
