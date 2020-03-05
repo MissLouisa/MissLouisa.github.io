@@ -4,7 +4,6 @@ var path = require('path');
 //leaving in the bodyParser in case we ever send up form data and need to get data out of form
 var bodyParser = require('body-parser');
 
-
 var app = express();
 
 // view engine setup
@@ -63,7 +62,10 @@ app.get('/error', function(req, res) {
     });
 });
 
-
 // doing this in www bin file to make Azure happy
 app.listen(8080);  // not setting port number in www.bin, simple to do here
 console.log('8080 is the magic port');
+
+//app.listen(443);
+//console.log('443');
+module.exports = app;
