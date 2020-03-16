@@ -20,8 +20,8 @@ canvas.height = 800;
 document.body.appendChild(canvas); // inject this new element intot the DOM
 
 // load sound
-var snd1 = new Audio("sounds/sound-planetcaught.mp3"); // credit https://www.myinstants.com/instant/mario-power-up/
-var snd2 = new Audio("sounds/sound-gameover.mp3"); // https://www.myinstants.com/instant/megaman-3-death-sound-effect/
+var snd1 = new Audio("sounds/sound-planetcaught.mp3"); // credit https://www.myinstants.com/instant/mario-power-up/   mario powers up
+var snd2 = new Audio("sounds/sound-gameover.mp3"); // https://www.myinstants.com/instant/megaman-3-death-sound-effect/   death sound in megaman
 var snd_theme = new Audio("sounds/metroid_theme.mp3"); // Super Metroid theme from Super Nintendo, Nintendo Copyright
 
 // load images, use the onload event so we can later wait for images to be there
@@ -71,7 +71,7 @@ holeImage.onload = function () {
 };
 holeImage.src = "images/black-hole.png";  // 50 by 60
 
-// Load the hole image
+// Load the hole image +1
 var newEnemyReady = false;
 var newEnemyImage = new Image();
 newEnemyImage.onload = function () {
@@ -80,15 +80,16 @@ newEnemyImage.onload = function () {
 };
 newEnemyImage.src = "images/meteor.png";  // 50 by 60
 
+// character face on the edge top
 var heroUIReady = false;
 var heroUIImage = new Image();
 heroUIImage.onload = function() {
     heroUIReady = true;
 }
-heroUIImage.src = "images/02.png"; // credit: https://www.spriters-resource.com/snes/smetroid/sheet/1728/
+heroUIImage.src = "images/02.png"; // credit: https://www.spriters-resource.com/snes/smetroid/sheet/1728/   super metroid character
 
+// array for the enemyes sprites 
 var enemySpriteList = [holeImage, newEnemyImage];
-
 
 var COUNT = 300;  // for snow   from web article   https://php.quicoto.com/snow-html-canvas/
 
@@ -104,10 +105,10 @@ var Snowflake = function () {  // constructor for snowflakes
 
 // random coordinate 
 Snowflake.prototype.reset = function () {
-  this.x = Math.floor(Math.random() * Math.floor(canvas.width/2));//Math.random() * canvas.width;
-  this.y = Math.floor(Math.random() * Math.floor(canvas.height/2)); // Math.random() * -canvas.height;
-  this.z = Math.random() * 500;
-  this.dir = Math.floor(Math.random() * Math.floor(2));
+  this.x = Math.floor(Math.random() * Math.floor(canvas.width/2)); 
+  this.y = Math.floor(Math.random() * Math.floor(canvas.height/2)); 
+  this.z = Math.random() * 500;  // i tried but doesnt work
+  this.dir = Math.floor(Math.random() * Math.floor(2)); //the direction for x and y are random 
   
   // More speed? Change this
   this.vy = 1 + Math.random() * 3;
@@ -156,10 +157,10 @@ addEventListener("keyup", function (key) {
 var reset = function () {  // board is 800 x 800
   usedXLocations = [];
   usedYLocations = [];
-  hero.anim = 0;
+  hero.anim = 0;  
   hero.ui_anim = 0;
-  hero.anim_interval = 5;
-  hero.ui_anim_timer = 200;
+  hero.anim_interval = 5;  // main character timer
+  hero.ui_anim_timer = 200;  // character face timer
   hero.is_ui_anim = false;
   // Reset player's position to centre of canvas
   hero.x = 400 - 32;
