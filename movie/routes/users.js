@@ -1,5 +1,6 @@
 
 var express = require('express');
+var path = require('path');
 var router = express.Router();
 
 let serverMovieArray = []; // our "permanent storage" on the web server
@@ -23,7 +24,7 @@ serverMovieArray.push(new MovieObject("La_La_Land", 2016, "Musical", "Ryan Gosli
 
 /* POST to addMovie */
 router.post('/addMovie', function(req, res) {
-  console.log(req.body);
+  console.log('form movie data:', req.body);
   serverMovieArray.push(req.body);
   console.log(serverMovieArray);
   //res.sendStatus(200);
@@ -33,12 +34,13 @@ router.post('/addMovie', function(req, res) {
 
 
 /* GET movieList. */
-router.get('/movieList', function(req, res) {
-  res.json(serverMovieArray);
+router.get('https://malucartaxo.azurewebsites.net/movie/public/index.html#Load', function(req, res) {
+  //res.json(serverMovieArray);
+  res.sendFile(path.join(__dirname,'https://malucartaxo.azurewebsites.net/movie/public/index.html#ListAll'));
  });
 
  /* DELETE to deleteMovie. */
- router.delete('/deleteMovie/:Title', function(req, res) {
+ router.delete('https://malucartaxo.azurewebsites.net/movie/public/index.html#ListAll:Title', function(req, res) {
   let Title = req.params.Title;
   Title = Title.toLowerCase();  // allow user to be careless about capitalization
   console.log('deleting ID: ' + Title);

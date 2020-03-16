@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("buttonAdd").addEventListener("click", function () {
     let newMovie = new MovieObject(document.getElementById("title").value, document.getElementById("year").value,
        selectedGenre, document.getElementById("man").value, document.getElementById("woman").value);
-       addNewMoive(newMovie); // now post new movie object to node server
+       addNewMovie(newMovie); // now post new movie object to node server
     });
 
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let deleteTitle = document.getElementById("deleteTitle").value;
 
     // doing the call to the server right here
-    fetch('users/deleteMovie/' + deleteTitle , {
+    fetch('https://malucartaxo.azurewebsites.net/movie/public/index.html#ListAll' + deleteTitle , {
     // users/deleteMovie/Moonstruck   for example, this is what the URL looks like sent over the network
         method: 'DELETE'
     })  
@@ -56,10 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(responsePromise1 => responsePromise1.text()) // ask for 2nd promise when server is node
     .then(responsePromise2 =>  console.log(responsePromise2), document.location.href = "index.html#refreshPage")  // wait for data from server to be valid
     // force jump off of same page to refresh the data after delete
-    .catch(function (err) {
+    /*.catch(function (err) {
         console.log(err);
         alert(err);
-       });
+       });*/
 
    
   });
@@ -170,7 +170,7 @@ function compareGenre(a, b) {
 
 function FillArrayFromServer(){
     // using fetch call to communicate with node server to get all data
-    fetch('/users/movieList')
+    fetch('https://malucartaxo.azurewebsites.net/movie/public/index.html#ListAll')
     .then(function (theResonsePromise) {  // wait for reply.  Note this one uses a normal function, not an => function
         return theResonsePromise.json();
     })
@@ -179,20 +179,20 @@ function FillArrayFromServer(){
     movieArray.length = 0;  // clear array
     movieArray = serverData;   // use our server json data which matches our objects in the array perfectly
     createList();  // placing this here will make it wait for data from server to be complete before re-doing the list
-    })
+    })/*
     .catch(function (err) {
      console.log(err);
-    });
+    });*/
 };
 
 
 // using fetch to push an object up to server
-function addNewMoive(newMovie){
+function addNewMovie(newMovie){
    
     // the required post body data is our movie object passed in, newMovie
     
     // create request object
-    const request = new Request('/users/addMovie', {
+    const request = new Request('https://malucartaxo.azurewebsites.net/movie/public/index.html#Load', {
         method: 'POST',
         body: JSON.stringify(newMovie),
         headers: new Headers({
@@ -206,11 +206,11 @@ function addNewMoive(newMovie){
         // Note this one uses an => function, not a normal function, just to show you can do either 
         .then(theResonsePromise => theResonsePromise.json())    // the .json sets up 2nd promise
         // wait for the .json promise, which is when the data is back
-        .then(theResonsePromiseJson => console.log(theResonsePromiseJson), document.location.href = "#ListAll" )
+        .then(theResonsePromiseJson => console.log(theResonsePromiseJson), document.location.href = "https://malucartaxo.azurewebsites.net/movie/public/index.html#ListAll")
         // that client console log will write out the message I added to the Repsonse on the server
-        .catch(function (err) {
+        /*.catch(function (err) {
             console.log(err);
-        });
+        });*/
     
 }; // end of addNewUser
     
