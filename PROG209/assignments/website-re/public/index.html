@@ -1,160 +1,71 @@
+<!-- Website inspired by Kurt Friedrich -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Let's RE</title>
-    <!-- <documentation at https://demos.jquerymobile.com/1.4.1/ > -->
+    <!-- documentation at https://demos.jquerymobile.com/1.4.1/ > -->
 
-    <link rel="stylesheet" href="../themes/darkness.min.css" />
+    <link rel="stylesheet" href="../themes/black.min.css" />
     <link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="../themes/darkness.css" />
+    <link rel="stylesheet" href="../themes/black.css" />
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="../themes/style.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src="index.js"></script>
-</head>
+    <script src="../public/js/index.js"></script>
+  </head>
 
-<body>
-    <!-- Start of Home page -->
-    <div data-role="page"  id="home">
-            <!--  login page header -->
-            <div data-role="header" data-theme='a'>
-               <!-- helpful location   -->
-              <!-- https://demos.jquerymobile.com/1.2.0/docs/toolbars/docs-navbar.html -->
-
-                <h1>Reverse Engineering</h1>
-                <div data-role="navbar"  data-theme='a'>
-                    <ul>
-                      <li><a href="#home">Home</a></li>
-                      <li><a href="#page1">RE in Android App</a></li>
-                      <li><a href="#page2">RE in Iphone</a></li>
-                      <li><a href="#page3">RE in Video Games</a></li>
-                      <li><a href="#page4">Web Security</a></li>
-                      <li><a href="#page5">List</a></li>
-                    </ul>
-                  </div><!-- /navbar -->
-            </div>
-            <!-- main page -->
-            <div data-role="content" data-theme='a'>
-               <h2>Hello darkness, my old friend</h2>
-               <p>There are several websites, tutorials, videos and books about information security. However, here is another website where you can share and self study stuffs about security.</p>
-               
-               <img src="../images/pikachumeme.png" alt="pikachu meme" width="10%" height="10%">
-
-               <p>Enjoy it.</p>
-
-               <ul>
-                <li><a href="#page1">RE in Android App</a></li>
-                <li><a href="#page2">RE in Iphone</a></li>
-                <li><a href="#page3">RE in Video Games</a></li>
-                <li><a href="#page4">Web Security</a></li>
-              </ul>
-
-            </div>
-              
-            <!-- page footer -->
-            <div data-role="footer" data-theme='a'>
-                    <h1>Copyrigtht 2020 by iamlouisa</h1>
-            </div>
-     </div>
-
-        <div data-role="page" id="page1">
-            <!--  page1 page header -->
-            <div data-role="header" data-theme='a'>
-              <h1>Reverse Engineering</h1>
-              <div data-role="navbar"  data-theme='a'>
-                  <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#page1">RE in Android App</a></li>
-                    <li><a href="#page2">RE in Iphone</a></li>
-                    <li><a href="#page3">RE in Video Games</a></li>
-                    <li><a href="#page4">Web Security</a></li>
-                    <li><a href="#page5">List</a></li>
-                  </ul>
-                </div><!-- /navbar -->
-          </div>
-            <!-- page content -->
-            <div data-role="content" data-theme='a'>
-              <ul>
-                <li><a href="https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05c-Reverse-Engineering-and-Tampering.md">Tampering and Reverse Engineering on Android by OWASP</a></li>
-                <li><a href="http://opensecuritytraining.info/AndroidForensics.html">Android Forensics & Security Testing by Shawn Valle</a></li>
-                <li><a href="https://maddiestone.github.io/AndroidAppRE/">Reverse Engineering in Android Applications by Maddie Stone from Project Zero (Google Security Team)</a></li>
-              </ul>
-            </div>
-
-        <!--  newaccount page footer -->
-        <div data-role="footer" data-theme='a'>
-          <h1>Copyrigtht 2020 by iamlouisa</h1>
+  <body>
+    <!-- home page -->
+    <div data-role="page" id="home">
+      <!-- header -->
+      <div data-role="header" data-theme='a'>
+        <!-- helpful location -->
+        <!-- https://demos.jquerymobile.com/1.2.0/docs/toolbars/docs-navbar.html -->
+        <h1>Let's RE</h1>
+        <!-- navbar -->
+        <div data-role="navbar" data-theme='a'>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#page1">RE in Android App</a></li>
+            <li><a href="#page2">RE in Iphone</a></li>
+            <li><a href="#page3">RE in Video Games</a></li>
+            <li><a href="#page4">Web Security</a></li>
+            <li><a href="#page5">List</a></li>
+          </ul>
+        </div> <!-- end of navbar -->      
+      </div> <!-- end of header -->   
+        
+      <!-- description/content -->
+      <div data-role="content" data-theme='a'>
+        <h2 style="text-align: center;">Hello darkness, my old friend</h2>
+        <p style="text-align: center;">Welcome to Let's RE! This website's goal is to give you material about any level of reverse engineering. Download it and/or share yours.</p>
+        <img src="../images/pikachumeme.png" alt="pikachu meme" width="10%" height="10%">
+        <p style="text-align: center;">Enjoy it.</p>
+        <div id="center">
+          <ul>
+            <li><a href="#page1">RE in Android App</a></li>
+            <li><a href="#page2">RE in Iphone</a></li>
+            <li><a href="#page3">RE in Video Games</a></li>
+            <li><a href="#page4">Web Security</a></li>
+          </ul>
         </div>
-      </div>
+      </div> <!-- end of description/content -->
+                
+      <!-- footer -->
+      <div data-role="footer" data-theme='a'>
+        <h1>Copyrigtht 2020 by iamlouisa</h1>
+      </div> <!-- end offooter -->
+    </div> <!-- end of home page -->
 
-    <!-- Start of gamelost page -->
-    <div data-role="page"  id="page2">
-            <!--  gamelost page header -->
-            <div data-role="header" data-theme='a'>
-              <h1>Reverse Engineering</h1>
-              <div data-role="navbar"  data-theme='a'>
-                  <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#page1">RE in Android App</a></li>
-                    <li><a href="#page2">RE in Iphone</a></li>
-                    <li><a href="#page3">RE in Video Games</a></li>
-                    <li><a href="#page4">Web Security</a></li>
-                    <li><a href="#page5">List</a></li>
-                  </ul>
-                </div><!-- /navbar -->
-          </div>
-            <!--  gamelost page content -->
-            <div data-role="content" data-theme='a'>
-              <ul>
-                <li><a href="https://azeria-labs.com/writing-arm-assembly-part-1/">Introduction to ARM Assembly Basics by Azeria</a></li>
-                <li><a href="https://www.youtube.com/playlist?list=PL-slHQxWd9GkhKu8oXXrIHFI_EoVHQqSA">iOS Exploitation/Security Research Tutorials by Billy Ellis</a></li>
-                <li><a href="https://media.ccc.de/v/36c3-11238-the_one_weird_trick_securerom_hates">The One Weird Trick SecureROM Hates by qwertyoruiop</a></li>
-                <li><a href="https://www.youtube.com/watch?v=_Is1mJLRyzg">Messenger Hacking: Remotely Compromising an iPhone through iMessage by Samuel Groß from Project Zero (Google Security Team)</a></li>
-              </ul>
-            </div>
-
-          <!--  gamelost page footer -->
-          <div data-role="footer" data-theme='a'>
-            <h1>Copyrigtht 2020 by iamlouisa</h1>
-          </div>
-    </div>
-
-    <!-- Start of gamewon page -->
-    <div data-role="page"  id="page3">
-            <!--  gamewon page header -->
-            <div data-role="header" data-theme='a'>
-              <h1>Reverse Engineering</h1>
-              <div data-role="navbar"  data-theme='a'>
-                  <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#page1">RE in Android App</a></li>
-                    <li><a href="#page2">RE in Iphone</a></li>
-                    <li><a href="#page3">RE in Video Games</a></li>
-                    <li><a href="#page4">Web Security</a></li>
-                    <li><a href="#page5">List</a></li>
-                  </ul>
-                </div><!-- /navbar -->
-          </div>
-            <!--  gamewon page content -->
-            <div data-role="content" data-theme='a'>
-              <ul>
-                <li><a href="https://bunniefoo.com/nostarch/HackingTheXbox_Free.pdf">Hacking The Xbox by Andrew "bunnie" Huang</a></li>
-                <li><a href="https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering">Nintendo Switch Reverse Engineering by dekuNukem</a></li>
-              </ul>
-        </div>
-
-        <!--  gamewon page footer -->
-        <div data-role="footer" data-theme='a'>
-          <h1>Copyrigtht 2020 by iamlouisa</h1>
-        </div>
-    </div>
-
-    <!-- Start of gamewon page -->
-    <div data-role="page"  id="page4">
-      <!--  gamewon page header -->
+    <!-- page1 or "RE in Android App" -->
+    <div data-role="page" id="page1">
+      <!-- header -->
       <div data-role="header" data-theme='a'>
         <h1>Reverse Engineering</h1>
+        <!-- navbar -->
         <div data-role="navbar"  data-theme='a'>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -164,82 +75,195 @@
             <li><a href="#page4">Web Security</a></li>
             <li><a href="#page5">List</a></li>
           </ul>
-        </div><!-- /navbar -->
-    </div>
-      <!--  gamewon page content -->
+        </div> <!-- end of navbar -->
+      </div> <!-- end of header -->
+      
+      <!-- content -->
+      <div data-role="content" data-theme='a'>
+        <ul>
+          <li><a href="https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05c-Reverse-Engineering-and-Tampering.md">Tampering and Reverse Engineering on Android by OWASP</a></li>
+          <li><a href="http://opensecuritytraining.info/AndroidForensics.html">Android Forensics & Security Testing by Shawn Valle</a></li>
+          <li><a href="https://maddiestone.github.io/AndroidAppRE/">Reverse Engineering in Android Applications by Maddie Stone from Project Zero (Google Security Team)</a></li>
+        </ul>
+      </div> <!-- end of content -->
+
+      <!-- footer -->
+      <div data-role="footer" data-theme='a'>
+        <h1>Copyrigtht 2020 by iamlouisa</h1>
+      </div> <!-- end of footer -->
+    </div> <!-- end of page1 -->
+
+    <!-- page2 or "RE in Iphone" -->
+    <div data-role="page" id="page2">
+      <!-- header -->
+      <div data-role="header" data-theme='a'>
+        <h1>Reverse Engineering</h1>
+        <!-- navbar -->
+        <div data-role="navbar" data-theme='a'>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#page1">RE in Android App</a></li>
+            <li><a href="#page2">RE in Iphone</a></li>
+            <li><a href="#page3">RE in Video Games</a></li>
+            <li><a href="#page4">Web Security</a></li>
+            <li><a href="#page5">List</a></li>
+          </ul>
+        </div> <!-- end of navbar -->
+      </div> <!-- end of header -->
+    
+      <!-- content -->
+      <div data-role="content" data-theme='a'>
+        <ul>
+          <li><a href="https://azeria-labs.com/writing-arm-assembly-part-1/">Introduction to ARM Assembly Basics by Azeria</a></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL-slHQxWd9GkhKu8oXXrIHFI_EoVHQqSA">iOS Exploitation/Security Research Tutorials by Billy Ellis</a></li>
+          <li><a href="https://media.ccc.de/v/36c3-11238-the_one_weird_trick_securerom_hates">The One Weird Trick SecureROM Hates by qwertyoruiop</a></li>
+          <li><a href="https://www.youtube.com/watch?v=_Is1mJLRyzg">Messenger Hacking: Remotely Compromising an iPhone through iMessage by Samuel Groß from Project Zero (Google Security Team)</a></li>
+        </ul>
+      </div> <!-- end of content -->
+
+      <!-- footer -->
+      <div data-role="footer" data-theme='a'>
+        <h1>Copyrigtht 2020 by iamlouisa</h1>
+      </div> <!-- end of footer -->
+    </div> <!-- end of page2-->
+
+    <!-- page3 or "RE in Video Games" -->
+    <div data-role="page" id="page3">
+      <!-- header -->
+      <div data-role="header" data-theme='a'>
+        <h1>Reverse Engineering</h1>
+        <!-- navbar -->
+        <div data-role="navbar" data-theme='a'>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#page1">RE in Android App</a></li>
+            <li><a href="#page2">RE in Iphone</a></li>
+            <li><a href="#page3">RE in Video Games</a></li>
+            <li><a href="#page4">Web Security</a></li>
+            <li><a href="#page5">List</a></li>
+          </ul>
+        </div> <!-- end of navbar -->
+      </div> <!-- end of header -->
+              
+      <!-- content -->
+      <div data-role="content" data-theme='a'>
+        <ul>
+          <li><a href="https://bunniefoo.com/nostarch/HackingTheXbox_Free.pdf">Hacking The Xbox by Andrew "bunnie" Huang</a></li>
+          <li><a href="https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering">Nintendo Switch Reverse Engineering by dekuNukem</a></li>
+        </ul>
+      </div> <!-- end of content -->
+
+      <!-- footer -->
+      <div data-role="footer" data-theme='a'>
+        <h1>Copyrigtht 2020 by iamlouisa</h1>
+      </div> <!-- end of footer -->
+    </div> <!-- end of page3 -->
+
+    <!-- page4 or "Web Security" -->
+    <div data-role="page" id="page4">
+    <!-- header -->
+      <div data-role="header" data-theme='a'>
+        <h1>Reverse Engineering</h1>
+        <!-- navbar -->
+        <div data-role="navbar" data-theme='a'>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#page1">RE in Android App</a></li>
+            <li><a href="#page2">RE in Iphone</a></li>
+            <li><a href="#page3">RE in Video Games</a></li>
+            <li><a href="#page4">Web Security</a></li>
+            <li><a href="#page5">List</a></li>
+          </ul>
+        </div> <!-- end of navbar -->
+      </div> <!-- end of header -->
+        
+      <!-- content -->
       <div data-role="content" data-theme='a'>
         <li><a href="https://www.slideshare.net/nragupathy/introduction-to-web-application-security-blackhoodie-us-2018">Introduction to Web Application Security by Niranjanaa Ragupathy</a></li>
         <li><a href="https://canseiiiiii.tumblr.com/">XSS on Tumblr by iamlouisa</a></li>
-      </div>
-        
-      <!--  gamewon page footer -->
+      </div> <!-- end of content -->
+          
+      <!-- footer -->
       <div data-role="footer" data-theme='a'>
         <h1>Copyrigtht 2020 by iamlouisa</h1>
-      </div>
-</div>
+      </div> <!-- end of footer -->
+    </div> <!-- end of page4 -->
 
-<div data-role="page"  id="page5">
-  <!--  gamewon page header -->
-  <div data-role="header" data-theme='a'>
-    <h1>Reverse Engineering</h1>
-    <div data-role="navbar"  data-theme='a'>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#page1">RE in Android App</a></li>
-        <li><a href="#page2">RE in Iphone</a></li>
-        <li><a href="#page3">RE in Video Games</a></li>
-        <li><a href="#page4">Web Security</a></li>
-        <li><a href="#page5">List</a></li>
-      </ul>
-    </div><!-- /navbar -->
-</div>
-  <!--  gamewon page content -->
-  <div data-role="content" data-theme='a'>
-    <p>Here is all the data</p>
-    <u>
-      <li><a href="https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05c-Reverse-Engineering-and-Tampering.md">Get Details</a> 1: Tampering and Reverse Engineering on Android by OWASP</li>
-      <li><a href="http://opensecuritytraining.info/AndroidForensics.html">Get Details</a> 2: Android Forensics & Security Testing by Shawn Valle</li>
-      <li><a href="https://maddiestone.github.io/AndroidAppRE/">Get Details</a> 3: Reverse Engineering in Android Applications by Maddie Stone from Project Zero (Google Security Team)</li>
-      <li><a href="https://azeria-labs.com/writing-arm-assembly-part-1/">Get Details</a> 4: Introduction to ARM Assembly Basics by Azeria</li>
-      <li><a href="https://www.youtube.com/playlist?list=PL-slHQxWd9GkhKu8oXXrIHFI_EoVHQqSA">Get Details</a> 5: iOS Exploitation/Security Research Tutorials by Billy Ellis</li>
-      <li><a href="https://media.ccc.de/v/36c3-11238-the_one_weird_trick_securerom_hates">Get Details</a> 6: The One Weird Trick SecureROM Hates by qwertyoruiop</li>
-      <li><a href="https://www.youtube.com/watch?v=_Is1mJLRyzg">Get Details</a> 7: Messenger Hacking: Remotely Compromising an iPhone through iMessage by Samuel Groß from Project Zero (Google Security Team)</li>
-      <li><a href="https://bunniefoo.com/nostarch/HackingTheXbox_Free.pdf">Get Details</a> 8: Hacking The Xbox by Andrew "bunnie" Huang</li>
-      <li><a href="https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering">Get Details</a> 9: Nintendo Switch Reverse Engineering by dekuNukem</li>
-      <li><a href="https://www.slideshare.net/nragupathy/introduction-to-web-application-security-blackhoodie-us-2018">Get Details</a> 10: Introduction to Web Application Security by Niranjanaa Ragupathy</li>
-      <li><a href="https://canseiiiiii.tumblr.com/">Get Details</a> 11: XSS on Tumblr by iamlouisa</li>
-    </u>
+    <!-- page5 or "List" -->
+    <div data-role="page" id="page5">
+      <!-- header -->
+      <div data-role="header" data-theme='a'>
+        <h1>Reverse Engineering</h1>
+        <!-- navbar -->
+        <div data-role="navbar" data-theme='a'>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#page1">RE in Android App</a></li>
+            <li><a href="#page2">RE in Iphone</a></li>
+            <li><a href="#page3">RE in Video Games</a></li>
+            <li><a href="#page4">Web Security</a></li>
+            <li><a href="#page5">List</a></li>
+          </ul>
+        </div> <!-- end of navbar -->
+      </div> <!-- end of header -->
 
-    <h2>Enter a new article</h2>
-      Link <br />
-      <input type="text" value="" id="link" />
-      Title <br />
-      <input type="text" value="" id="title" />
-      Author <br />
-      <input type="text" value="" id="author" />
-      Position <br />
-      <input type="text" value="" id="position" />
-      <form>
-        <div class="ui-field-contain">
-          <label for="select-section">Select a section</label>
-          <select name="select-section" id="select-section">
-            <option value="AndroidApp">RE in Android App</option>
-            <option value="Iphone">RE in Iphone</option>
-            <option value="VideoGames">RE in Video Games</option>
-            <option value="WebSecurity">Web Security</option>
-          </select>
-        </div>
-      </form>
+      <!-- content -->
+      <div data-role="content" data-theme='a'>
+        <p>Here is all the data</p>
+        <ul id="myListOfThings">
+          <li><a href="https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05c-Reverse-Engineering-and-Tampering.md">Get Details</a> 1: Tampering and Reverse Engineering on Android by OWASP</li>
+          <li><a href="http://opensecuritytraining.info/AndroidForensics.html">Get Details</a> 2: Android Forensics & Security Testing by Shawn Valle</li>
+          <li><a href="https://maddiestone.github.io/AndroidAppRE/">Get Details</a> 3: Reverse Engineering in Android Applications by Maddie Stone from Project Zero (Google Security Team)</li>
+          <li><a href="https://azeria-labs.com/writing-arm-assembly-part-1/">Get Details</a> 4: Introduction to ARM Assembly Basics by Azeria</li>
+          <li><a href="https://www.youtube.com/playlist?list=PL-slHQxWd9GkhKu8oXXrIHFI_EoVHQqSA">Get Details</a> 5: iOS Exploitation/Security Research Tutorials by Billy Ellis</li>
+          <li><a href="https://media.ccc.de/v/36c3-11238-the_one_weird_trick_securerom_hates">Get Details</a> 6: The One Weird Trick SecureROM Hates by qwertyoruiop</li>
+          <li><a href="https://www.youtube.com/watch?v=_Is1mJLRyzg">Get Details</a> 7: Messenger Hacking: Remotely Compromising an iPhone through iMessage by Samuel Groß from Project Zero (Google Security Team)</li>
+          <li><a href="https://bunniefoo.com/nostarch/HackingTheXbox_Free.pdf">Get Details</a> 8: Hacking The Xbox by Andrew "bunnie" Huang</li>
+          <li><a href="https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering">Get Details</a> 9: Nintendo Switch Reverse Engineering by dekuNukem</li>
+          <li><a href="https://www.slideshare.net/nragupathy/introduction-to-web-application-security-blackhoodie-us-2018">Get Details</a> 10: Introduction to Web Application Security by Niranjanaa Ragupathy</li>
+          <li><a href="https://canseiiiiii.tumblr.com/">Get Details</a> 11: XSS on Tumblr by iamlouisa</li>
+        </ul>
 
-      <input type="button" value="Click To Share New Article" id="buttonAdd"  data-inline="true" />
+        <!-- user input -->
+        <h2>Enter a new article</h2>
+          Link <br />
+          <input type="text" value="" id="link" />
+          Title <br />
+          <input type="text" value="" id="title" />
+          Author <br />
+          <input type="text" value="" id="author" />
+          Author's job <em>(optional)</em> <br />
+          <input type="text" value="" id="position" />
+          <form>
+            <div class="ui-field-contain">
+              <label for="select-section">Select a section</label>
+              <select name="select-section" id="select-section">
+                <option value="AndroidApp">RE in Android App</option>
+                <option value="Iphone">RE in Iphone</option>
+                <option value="VideoGames">RE in Video Games</option>
+                <option value="WebSecurity">Web Security</option>
+              </select>
+            </div>
+          </form>
+
+        <input type="button" value="Click To Share New Article" id="buttonAdd"  data-inline="true" />
         <input type="button" value="Clear Data" id="buttonClear"  data-inline="true" />
-  </div>
-    
-  <!--  gamewon page footer -->
-  <div data-role="footer" data-theme='a'>
-    <h1>Copyrigtht 2020 by iamlouisa</h1>
-  </div>
-</div>
 
-</body>
+        <div id="divREList"></div>
+          <input type="button" value="Sort By Title" id="buttonSortTitle" data-inline="true"  />
+          <input type="button" value="Sort By Section" id="buttonSortSection" data-inline="true"   />
+          <br />
+          <br />
+          Enter Article Title to Delete <br />
+          <input type="text" value="" id="deleteTitle" data-inline="true" />
+          <input type="button" value="Delete RE by Title from Title box" id="buttonDelete" data-inline="true"   />
+      </div> <!-- end of content and end of user input -->
+      
+      <!-- footer -->
+      <div data-role="footer" data-theme='a'>
+        <h1>Copyrigtht 2020 by iamlouisa</h1>
+      </div> <!-- end of footer -->
+    </div> <!-- end of page5 -->
+
+  </body>
 </html>
