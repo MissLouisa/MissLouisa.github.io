@@ -194,12 +194,12 @@ function addNewMovie(newMovie){
     // create request object
     const request = new Request('https://malucartaxo.azurewebsites.net/movie/public/index.html#Load', {
         method: 'POST',
-        body: JSON.stringify(newMovie),
+        body: newMovie,
         headers: new Headers({
             'Content-Type': 'application/json'
         })
     });
-    
+     console.log(request);
     // pass that request object we just created into the fetch()
     fetch(request)
         // wait for frist server promise response of "200" success (can name these returned promise objects anything you like)
