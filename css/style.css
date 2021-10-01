@@ -1,0 +1,35 @@
+h2, h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: #B9944B
+}
+
+#first-row {
+    border: none;
+    text-align: center;
+    margin-top: 2.5%;
+    color: #B9944B;
+}
+
+#second-row {
+    border: none;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+#kenny-pic {
+    height: 250px;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+.center {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.paragraph {
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
